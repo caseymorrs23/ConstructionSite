@@ -143,3 +143,41 @@ textarea{min-height:140px;resize:vertical}
   position: relative;
   z-index: 2;
 }
+
+/* --- GQC Silver & Black vibe --- */
+:root {
+  --silver: #C0C6CC;
+}
+.cta {
+  border-color: var(--silver) !important;
+  background: var(--silver) !important;
+  color: #111 !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+.cta:hover { filter: brightness(.93) }
+.card {
+  border-color: rgba(192,198,204,.35) !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+.section .container { position: relative }
+.section .container::before {
+  content: "";
+  position: absolute; left:0; right:0; top:-1px; height:1px;
+  background: linear-gradient(90deg, transparent, rgba(192,198,204,.7), transparent);
+}
+.header { border-bottom: 1px solid rgba(192,198,204,.25) }
+.footer { border-top: 1px solid rgba(192,198,204,.25) }
+a { color: var(--brand); }
+a.cta-secondary {
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:8px;
+  border:1px solid var(--silver);
+  color:#e5e7eb;
+}
+a.cta-secondary:hover { background: rgba(192,198,204,.12) }
+
+/* Optional subtle parallax on hero for desktop */
+@media (min-width: 981px) {
+  .hero.photo .bg { background-attachment: fixed; }
+}

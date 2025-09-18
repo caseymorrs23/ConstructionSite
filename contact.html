@@ -60,7 +60,13 @@
     <div class="container">
       <h2>Request a Bid</h2>
       <p class="lead">Send plans and scope; get an itemized, schedule-aligned proposal.</p>
-      <form class="form" onsubmit="return validateContact(event)" action="mailto:Tducatt@guaranteedquality.net" method="post" enctype="text/plain">
+      <form class="form" onsubmit="return validateContact(event)" action="https://formsubmit.co/Tducatt@guaranteedquality.net" method="POST">
+        
+        <input type="hidden" name="_subject" value="GQC — New Bid Request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thanks.html">
+
         <div><label for="name">Full Name</label><input class="input" id="name" name="name" required></div>
         <div><label for="phone">Phone</label><input class="input" id="phone" name="phone" value="(206) 856-6202" required></div>
         <div class="full"><label for="email">Email</label><input class="input" id="email" type="email" name="email" value="Tducatt@guaranteedquality.net" required></div>

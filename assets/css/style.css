@@ -53,3 +53,27 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
   .kv{grid-template-columns: 1fr; gap: 12px;}
   .kv img{max-width: 100%;}
 }
+
+/* Service card overlay styling */
+.card.service{position:relative;overflow:hidden}
+.card.service img{width:100%;height:auto;display:block;filter:brightness(0.85)}
+.card.service::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,.15));
+  pointer-events:none}
+
+/* Header/Footer logo sizing */
+.brand img, .footer .brand-logo {
+  height: 42px;
+  width: auto;
+  display: inline-block;
+}
+.footer.black {
+  background: #0b0b0b;
+  color: #e5e7eb;
+  border-top: 1px solid rgba(192,198,204,.25);
+}
+.footer.black a { color: #C0C6CC; }
+.footer .column { display:flex; align-items:flex-start; gap:12px; }
+.footer .social { display:flex; gap:10px; margin-top:8px; }
+.footer .social a svg { width:20px; height:20px; fill:#C0C6CC; }
+.footer .small { color:#c9ced4; }

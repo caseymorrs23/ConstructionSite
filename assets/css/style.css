@@ -1,16 +1,16 @@
 
 :root{
-  --brand:#1A3A5A;
-  --brand-dark:#0F2235;
-  --accent:#D4A017;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --bg:#F5F7FA;
+  --brand:#111111;
+  --brand-dark:#000000;
+  --accent:#BFC5C9;
+  --text:#1f1f1f;
+  --muted:#60666c;
+  --bg:#F7F7F8;
   --white:#ffffff;
   --maxw:1200px;
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
 a{color:var(--brand);text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
@@ -21,11 +21,11 @@ a:hover{text-decoration:underline}
 .brand .title{font-weight:800;color:var(--brand-dark)}
 .menu{display:flex;gap:18px;align-items:center}
 .menu a{font-weight:600;color:var(--brand-dark)}
-.cta{background:var(--accent);color:#111;padding:10px 14px;border-radius:8px;font-weight:700}
+.cta{background:var(--accent);color:#111;padding:10px 14px;border-radius:8px;font-weight:700;border:1px solid #000}
 .cta:hover{filter:brightness(.95)}
 .burger{display:none;font-size:28px;cursor:pointer}
 
-.hero{display:grid;grid-template-columns:1fr;align-items:center;background:var(--white)}
+.hero{background:var(--white)}
 .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:40px 0}
 .hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
 .hero p{color:var(--muted);font-size:18px;margin:0 0 20px}
@@ -49,7 +49,7 @@ a:hover{text-decoration:underline}
 .gallery img{width:100%;margin:0 0 12px;border-radius:10px;border:1px solid #e5e7eb}
 
 .banner-cta{background:linear-gradient(90deg,var(--brand-dark),var(--brand));color:white;border-radius:14px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.banner-cta .actions a{background:var(--accent);color:#111;padding:10px 14px;border-radius:10px;font-weight:700}
+.banner-cta .actions a{background:var(--accent);color:#111;padding:10px 14px;border-radius:10px;font-weight:700;border:1px solid #000}
 
 .footer{margin-top:40px;border-top:1px solid #e5e7eb;background:var(--white)}
 .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:30px 0}

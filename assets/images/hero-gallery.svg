@@ -1,18 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-label="Project Gallery placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-label="Project Gallery">
   <defs>
     <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#1A3A5A"/>
-      <stop offset="100%" stop-color="#0F2235"/>
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
     <pattern id="diag" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="12" height="12" fill="none"/>
-      <line x1="0" y1="0" x2="0" y2="12" stroke="#D4A01722" stroke-width="6"/>
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#BFC5C922" stroke-width="6"/>
     </pattern>
   </defs>
   <rect width="100%" height="100%" fill="url(#g1)"/>
   <rect width="100%" height="100%" fill="url(#diag)"/>
-  <g fill="#D4A017">
-    <text x="50%" y="45%" text-anchor="middle" font-size="60" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700">Project Gallery</text>
-    <text x="50%" y="60%" text-anchor="middle" font-size="30" font-family="Inter, Helvetica, Arial, sans-serif">Bonney Lake • Enumclaw • Buckley • Sumner • Puyallup</text>
+  <g fill="#BFC5C9">
+    <text x="50%" y="45%" text-anchor="middle" font-size="60" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="800">Project Gallery</text>
+    <text x="50%" y="60%" text-anchor="middle" font-size="27" font-family="Inter, Helvetica, Arial, sans-serif">Multi‑Family • Custom Homes</text>
   </g>
 </svg>

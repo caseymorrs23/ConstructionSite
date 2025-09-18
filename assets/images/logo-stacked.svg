@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="180" viewBox="0 0 740 180" role="img" aria-label="GQC logo">
+  <defs>
+    <style>
+      .mono{font-family:Helvetica, Arial, sans-serif}
+    </style>
+  </defs>
+  <rect width="740" height="180" fill="#ffffff"/>
+  <g transform="translate(16,16)">
+    <!-- Stacked G-Q-C circles -->
+    <g transform="translate(0,0)">
+      <circle cx="70" cy="40" r="36" fill="#111111"/>
+      <text x="70" y="48" text-anchor="middle" font-size="40" font-weight="800" class="mono" fill="#C0C6CC">G</text>
+      <circle cx="70" cy="92" r="36" fill="#111111"/>
+      <text x="70" y="100" text-anchor="middle" font-size="40" font-weight="800" class="mono" fill="#C0C6CC">Q</text>
+      <circle cx="70" cy="144" r="36" fill="#111111"/>
+      <text x="70" y="152" text-anchor="middle" font-size="40" font-weight="800" class="mono" fill="#C0C6CC">C</text>
+    </g>
+    <!-- Company text -->
+    <g transform="translate(140,20)">
+      <text x="0" y="36" class="mono" font-size="34" font-weight="800" fill="#111111">Guaranteed</text>
+      <text x="0" y="76" class="mono" font-size="34" font-weight="800" fill="#111111">Quality</text>
+      <text x="0" y="116" class="mono" font-size="34" font-weight="800" fill="#111111">Construction</text>
+    </g>
+  </g>
+</svg>

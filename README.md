@@ -1,9 +1,10 @@
-# QGC — Guarantee Quality Construction – Website Bundle
+# GQC — Guaranteed Quality Construction – Website Bundle (Updated V3)
 
-**Focus:** Commercial wood framing for multi‑family & commercial projects.  
-**Brand:** All black & silver.  
-**Phone:** (206) 856-6202 • **Email:** info@qgc-build.com
+**Brand:** Black & Silver • **Tagline:** Commercial Wood Framing & Building Envelope
+**Services:** Framing • Building Envelope • Windows • Trim • Doors & Hardware
+**Phone:** (206) 856-6202 • **Email:** Tducatt@guaranteedquality.net
 
-Pages: Home, About, Capabilities, Projects, Contact.  
-Deploy via any static host (GitHub Pages / Netlify / Vercel / cPanel).  
+Pages: Home, About, Capabilities, Projects, Contact, Careers.
+Assets: hero images, 5 service tiles, 8 gallery placeholders, stacked GQC logo (SVG/PNG), favicon.
+Deploy via any static host (GitHub Pages / Netlify / Vercel / cPanel).
 Built 2025-09-18.

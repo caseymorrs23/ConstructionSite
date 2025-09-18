@@ -6,24 +6,8 @@
   <link rel="icon" href="assets/images/favicon.svg">
   <link rel="preload" href="assets/images/logo-stacked.svg" as="image">
   <link rel="stylesheet" href="assets/css/style.css">
-  <meta property="og:title" content="Contact | GQC — Guaranteed Quality Construction">
-  <meta property="og:description" content="Request a bid for commercial wood framing & building envelope.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/hero-contact.svg">
-  <meta property="og:url" content="https://example.com/">
+  <meta property="og:title" content="Contact | GQC — Guaranteed Quality Construction"><meta property="og:description" content="Request a bid for commercial wood framing & building envelope."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/hero-clean.jpg">
   <script defer src="assets/js/app.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Contractor",
-    "name": "GQC — Guaranteed Quality Construction",
-    "image": "assets/images/hero-contact.svg",
-    "telephone": "(206) 856-6202",
-    "email": "Tducatt@guaranteedquality.net",
-    "areaServed": "Multi-Family • Commercial • Large Apartments",
-    "url": "https://example.com/"
-  }
-  </script>
 </head>
 <body>
 <header class="header">
@@ -44,44 +28,30 @@
     </nav>
   </div>
 </header>
+
 <main>
   <section class="section tight band-photo">
-    <div class="bg" style="background-image:url('assets/images/banner-2.jpg')"></div>
-    <div class="veil"></div>
+    <div class="bg"></div><div class="veil"></div>
     <div class="container">
       <h1 style="color:#fff; margin:0 0 8px">Request a Bid</h1>
-      <p class="lead" style="color:#e5e7eb">Guaranteed Quality Construction</p>
+      <p class="lead" style="color:#e5e7eb">Send plans and scope; get an itemized, schedule-aligned proposal.</p>
     </div>
   </section>
 
-
-
   <section class="section">
     <div class="container">
-      <h2>Request a Bid</h2>
-      <p class="lead">Send plans and scope; get an itemized, schedule-aligned proposal.</p>
       <form class="form" onsubmit="return validateContact(event)" action="https://formsubmit.co/Tducatt@guaranteedquality.net" method="POST">
-        
         <input type="hidden" name="_subject" value="GQC — New Bid Request">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="thanks.html">
-
         <div><label for="name">Full Name</label><input class="input" id="name" name="name" required></div>
-        <div><label for="phone">Phone</label><input class="input" id="phone" name="phone" value="(206) 856-6202" required></div>
-        <div class="full"><label for="email">Email</label><input class="input" id="email" type="email" name="email" value="Tducatt@guaranteedquality.net" required></div>
+        <div><label for="phone">Phone</label><input class="input" id="phone" name="phone" required></div>
+        <div class="full"><label for="email">Email</label><input class="input" id="email" type="email" name="email" required></div>
         <div class="full"><label for="message">Project Details</label><textarea class="input" id="message" name="message" placeholder="Project type, location, schedule, plans link..."></textarea></div>
         <div class="full"><button class="cta" type="submit">Send Request</button></div>
       </form>
       <div class="notice">Prefer a call? Reach us at <a href="tel:(206) 856-6202">(206) 856-6202</a> or email <a href="mailto:Tducatt@guaranteedquality.net">Tducatt@guaranteedquality.net</a>.</div>
-    </div>
-  </section>
-
-  <section class="section band-dark">
-    <div class="container">
-      <h2>Ready to Bid?</h2>
-      <p class="lead">Send plans and scope—get an itemized, schedule-aligned proposal.</p>
-      <p><a class="cta" href="contact.html">Request a Bid</a></p>
     </div>
   </section>
 </main>

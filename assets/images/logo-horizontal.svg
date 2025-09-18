@@ -1,9 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160" role="img" aria-label="GQC logo">
-  <rect width="600" height="160" fill="white"/>
-  <g transform="translate(16,20)">
-    <rect x="0" y="0" width="120" height="120" rx="16" fill="#111111"/>
-    <text x="60" y="78" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="800" font-size="60" fill="#BFC5C9">GQC</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="180" viewBox="0 0 740 180" role="img" aria-label="QGC logo">
+  <defs>
+    <style>
+      .mono{font-family:Inter, Helvetica, Arial, sans-serif}
+    </style>
+  </defs>
+  <rect width="740" height="180" fill="#ffffff"/>
+  <g transform="translate(16,16)">
+    <!-- Stacked G-Q-C circles to mimic the card look -->
+    <g transform="translate(0,0)">
+      <circle cx="70" cy="40" r="36" fill="#111111"/>
+      <text x="70" y="48" text-anchor="middle" font-size="40" font-weight="800" class="mono" fill="#C0C6CC">G</text>
+      <circle cx="70" cy="92" r="36" fill="#111111"/>
+      <text x="70" y="100" text-anchor="middle" font-size="40" font-weight="800" class="mono" fill="#C0C6CC">Q</text>
+      <circle cx="70" cy="144" r="36" fill="#111111"/>
+      <text x="70" y="152" text-anchor="middle" font-size="40" font-weight="800" class="mono" fill="#C0C6CC">C</text>
+    </g>
+    <!-- Company text -->
+    <g transform="translate(140,20)">
+      <text x="0" y="36" class="mono" font-size="34" font-weight="800" fill="#111111">Guaranteed</text>
+      <text x="0" y="76" class="mono" font-size="34" font-weight="800" fill="#111111">Quality</text>
+      <text x="0" y="116" class="mono" font-size="34" font-weight="800" fill="#111111">Construction</text>
+    </g>
   </g>
-  <text x="152" y="70" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#111">GQC — MNT Quality Construction</text>
-  <text x="152" y="110" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" fill="#555">Commercial Wood Framing • Custom Homes • CLT • Passive House</text>
+  <text x="720" y="30" text-anchor="end" class="mono" font-size="16" fill="#6b7280">Commercial Wood Framing & Building Envelope</text>
 </svg>

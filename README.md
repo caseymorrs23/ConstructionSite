@@ -1,8 +1,9 @@
-# GQC — MNT Quality Construction – Website Bundle
+# QGC — Guarantee Quality Construction – Website Bundle
 
-Pages: Home, About, Services, Projects, Contact.
-Brand: Black/Silver. Focus: Commercial wood framing (35,000+ sq ft), Custom Homes, CLT, Passive House.
-Phone: (206) 856-6202 • Email: info@gqc-build.com
+**Focus:** Commercial wood framing for multi‑family & commercial projects.  
+**Brand:** All black & silver.  
+**Phone:** (206) 856-6202 • **Email:** info@qgc-build.com
 
-Deploy by uploading the folder contents or push to GitHub Pages / Netlify / Vercel.
+Pages: Home, About, Capabilities, Projects, Contact.  
+Deploy via any static host (GitHub Pages / Netlify / Vercel / cPanel).  
 Built 2025-09-18.

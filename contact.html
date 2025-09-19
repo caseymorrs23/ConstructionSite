@@ -38,7 +38,15 @@
   <link rel="manifest" href="./site.webmanifest">
   <meta name="theme-color" content="#000000">
   <!-- Dual-path CSS/JS: relative + absolute fallback for GitHub Pages repo -->
-  <link rel="stylesheet" href="./assets/css/style.css"><script defer src="./assets/js/app.js"></script></head>
+  <link rel="stylesheet" href="./assets/css/style.css"><script defer src="./assets/js/app.js"></script>
+/* V30A inline override: ensure hero uses the image, not fallback black */
+<style>
+.hero.banner .bg{
+  background: url('/ConstructionSite/assets/images/hero-clean.jpg') center/cover no-repeat !important;
+}
+</style>
+
+</head>
 <body>
 <header class="header">
   <base href="/ConstructionSite/">

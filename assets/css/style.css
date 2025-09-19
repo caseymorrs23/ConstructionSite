@@ -13,7 +13,7 @@
 .hero.banner{position:relative;height:42vh;min-height:320px;color:#fff;overflow:hidden}
 .hero.banner .bg{position:absolute;inset:0;background:url('../images/hero-clean.jpg') center/cover no-repeat;filter:grayscale(.05)}
 /* Absolute fallback for GitHub Pages repo subfolder */
-@media all{.hero.banner .bg{background:url('/ConstructionSite/assets/images/hero-clean.jpg') center/cover no-repeat, url('../images/hero-clean.jpg') center/cover no-repeat}}
+}
 .hero.banner .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,.2))}
 .hero.banner .container{position:relative;z-index:2;display:flex;align-items:flex-end;height:100%;padding-bottom:6vh}
 .hero.banner h1{color:#fff;font-size:48px;margin:0}.hero.banner p{color:#d1d5db;max-width:60ch;font-size:18px}
@@ -27,7 +27,7 @@
 .footer.black{background:#000;color:#E6E8EA}
 .footer.black a{color:#E6E8EA;text-decoration:underline}
 .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:20px 0}
-.footer .brand-wide{height:34px;width:auto;max-width:100%;display:block;margin-bottom:4px;object-fit:contain}
+.footer .brand-wide{height:30px;width:auto;max-width:100%;display:block;margin-bottom:4px;object-fit:contain}
 .footer h4{color:#F3F4F6;margin:0 0 8px}.footer .small{color:#E6E8EA}
 .footer .column, .footer-inner{overflow:visible}
 

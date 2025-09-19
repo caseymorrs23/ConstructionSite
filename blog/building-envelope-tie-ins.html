@@ -1,5 +1,32 @@
 <!doctype html>
 <html lang="en"><head>
+  <style>
+/* Critical CSS fallback */
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Helvetica,Arial,sans-serif}
+.container{max-width:1240px;margin:0 auto;padding:0 16px}
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid rgba(192,198,204,.25);box-shadow:0 2px 12px rgba(0,0,0,.06);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}.brand img{height:42px}.brand .title{font-weight:800;color:#000;white-space:nowrap}
+.menu{display:flex;gap:18px;align-items:center}.menu a{font-weight:600;color:#000;text-decoration:none;padding:6px 4px}
+.cta{background:#C0C6CC;color:#111;padding:10px 14px;border-radius:8px;font-weight:700;border:1px solid #C0C6CC}
+.hero.banner{position:relative;height:42vh;min-height:320px;color:#fff;overflow:hidden}
+.hero.banner .bg{position:absolute;inset:0;background:url('../assets/images/hero-clean.jpg') center/cover no-repeat}
+.hero.banner .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,.2))}
+.hero.banner .container{position:relative;z-index:2;display:flex;align-items:flex-end;height:100%;padding-bottom:6vh}
+.hero.banner h1{color:#fff;font-size:42px;margin:0}.hero.banner p{color:#d1d5db;max-width:60ch}
+.section{padding:56px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid rgba(192,198,204,.35);border-radius:12px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.card img{width:100%;display:block;aspect-ratio:3/2;object-fit:cover}
+.card .body{padding:16px}
+.footer.black{background:#000;color:#E6E8EA}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:20px 0}
+.footer .brand-wide{height:34px;width:auto;max-width:100%;display:block;margin-bottom:4px;object-fit:contain}
+.footer a{color:#E6E8EA}
+@media(max-width:980px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.grid-3{grid-template-columns:1fr}.menu{display:none} .burger{display:block}}
+</style>
+
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Building Envelope Integration: Protecting Projects from Day One | GQC Insights</title>
   <meta name="description" content="Building Envelope Integration: Protecting Projects from Day One — Guaranteed Quality Construction.">
@@ -9,13 +36,36 @@
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#000000">
   <!-- Dual-path CSS/JS: relative + absolute fallback for GitHub Pages repo -->
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="/ConstructionSite/assets/css/style.css">
-  <script defer src="../assets/js/app.js"></script>
-  <script defer src="/ConstructionSite/assets/js/app.js"></script>
-</head>
+  <link rel="stylesheet" href="../assets/css/style.css"><script defer src="../assets/js/app.js"></script></head>
 <body>
 <header class="header">
+  <style>
+/* Critical CSS fallback */
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Helvetica,Arial,sans-serif}
+.container{max-width:1240px;margin:0 auto;padding:0 16px}
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid rgba(192,198,204,.25);box-shadow:0 2px 12px rgba(0,0,0,.06);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}.brand img{height:42px}.brand .title{font-weight:800;color:#000;white-space:nowrap}
+.menu{display:flex;gap:18px;align-items:center}.menu a{font-weight:600;color:#000;text-decoration:none;padding:6px 4px}
+.cta{background:#C0C6CC;color:#111;padding:10px 14px;border-radius:8px;font-weight:700;border:1px solid #C0C6CC}
+.hero.banner{position:relative;height:42vh;min-height:320px;color:#fff;overflow:hidden}
+.hero.banner .bg{position:absolute;inset:0;background:url('../assets/images/hero-clean.jpg') center/cover no-repeat}
+.hero.banner .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,.2))}
+.hero.banner .container{position:relative;z-index:2;display:flex;align-items:flex-end;height:100%;padding-bottom:6vh}
+.hero.banner h1{color:#fff;font-size:42px;margin:0}.hero.banner p{color:#d1d5db;max-width:60ch}
+.section{padding:56px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid rgba(192,198,204,.35);border-radius:12px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.card img{width:100%;display:block;aspect-ratio:3/2;object-fit:cover}
+.card .body{padding:16px}
+.footer.black{background:#000;color:#E6E8EA}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:20px 0}
+.footer .brand-wide{height:34px;width:auto;max-width:100%;display:block;margin-bottom:4px;object-fit:contain}
+.footer a{color:#E6E8EA}
+@media(max-width:980px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.grid-3{grid-template-columns:1fr}.menu{display:none} .burger{display:block}}
+</style>
+
   <div class="container nav">
     <a class="brand" href="../index.html"><img src="../assets/images/logo-stacked.png" alt="GQC logo"><span class="title">Guaranteed Quality Construction</span></a>
     <nav>

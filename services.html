@@ -2,27 +2,29 @@
 <html lang="en"><head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Capabilities | GQC — Guaranteed Quality Construction</title>
-  <meta name="description" content="Capabilities: Framing, Building Envelope, Windows, Trim, Doors & Hardware.">
-  <link rel="icon" href="assets/images/favicon.svg">
-  <link rel="preload" href="assets/images/logo-stacked.svg" as="image">
+  <meta name="description" content="Commercial wood framing is our specialty; we also provide residential framing & finish and CLT assembly.">
+  <link rel="icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
-  <meta property="og:title" content="Capabilities | GQC — Guaranteed Quality Construction"><meta property="og:description" content="Capabilities: Framing, Building Envelope, Windows, Trim, Doors & Hardware."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/hero-clean.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Capabilities | GQC — Guaranteed Quality Construction"><meta property="og:description" content="Commercial wood framing is our specialty; we also provide residential framing & finish and CLT assembly.">
   <script defer src="assets/js/app.js"></script>
 </head>
 <body>
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Go to home">
-      <img src="assets/images/logo-stacked.png" alt="GQC logo">
-      <span class="title">GQC — Guaranteed Quality Construction</span>
-    </a>
+    <a class="brand" href="index.html"><img src="assets/images/logo-horizontal.png" alt="GQC logo"><span class="title">GQC — Guaranteed Quality Construction</span></a>
     <nav>
       <span class="burger" aria-label="Open menu">☰</span>
-      <div class="menu" role="navigation" aria-label="Main menu">
+      <div class="menu">
         <a href="about.html">About</a>
         <a href="services.html">Capabilities</a>
         <a href="gallery.html">Projects</a>
         <a href="careers.html">Careers</a>
+        <a href="blog.html">Insights</a>
         <a href="contact.html" class="cta">Request a Bid</a>
       </div>
     </nav>
@@ -30,22 +32,31 @@
 </header>
 
 <main>
-  <section class="section tight band-photo">
-    <div class="bg"></div><div class="veil"></div>
-    <div class="container">
-      <h1 style="color:#fff; margin:0 0 8px">Capabilities</h1>
-      <p class="lead" style="color:#e5e7eb">Framing scopes with envelope integration.</p>
-    </div>
+  <section class="section band-photo"><div class="bg"></div><div class="veil"></div>
+    <div class="container"><h1 style="color:#fff">Capabilities</h1><p class="lead" style="color:#e5e7eb">Commercial framing (primary), plus residential & CLT.</p></div>
   </section>
-
   <section class="section">
     <div class="container">
-      <div class="grid-3">
-        <div class="card service" id="framing"><img src="assets/images/framing.jpg" alt="Framing"><div class="body"><h3>Framing</h3><p>Structural framing crews for multi-family & commercial.</p></div></div>
-        <div class="card service" id="envelope"><img src="assets/images/envelope.jpg" alt="Building Envelope"><div class="body"><h3>Building Envelope</h3><p>WRB integration, flashing, and coordination.</p></div></div>
-        <div class="card service" id="windows"><img src="assets/images/windows.jpg" alt="Windows"><div class="body"><h3>Windows</h3><p>Install and integration with envelope details.</p></div></div>
-        <div class="card service" id="trim"><img src="assets/images/trim.jpg" alt="Trim"><div class="body"><h3>Trim</h3><p>Interior/exterior trim to spec.</p></div></div>
-        <div class="card service" id="doors-hardware"><img src="assets/images/doors.jpg" alt="Doors & Hardware"><div class="body"><h3>Doors & Hardware</h3><p>Pre-hangs, hardware schedules, and fit-out.</p></div></div>
+      <h2>Work Types</h2>
+      <p class="lead">Guaranteed Quality Construction specializes in large-scale <strong>commercial wood framing</strong> across Washington. We also provide <strong>custom residential framing &amp; finish</strong> and advanced <strong>CLT assembly</strong>.</p>
+      <div class="tabs" role="tablist" aria-label="Work Types">
+        <button class="tab is-active" data-tab="commercial" aria-selected="true">Commercial</button>
+        <button class="tab" data-tab="residential" aria-selected="false">Residential</button>
+        <button class="tab" data-tab="clt" aria-selected="false">CLT</button>
+      </div>
+      <div class="tabpanes">
+        <div class="tabpane is-active" id="commercial" role="tabpanel" aria-labelledby="commercial">
+          <h3>Commercial Wood Framing</h3>
+          <p>Large apartments (35,000+ sq. ft.), multi‑family, retail, and light commercial. Envelope integration, windows/doors, and hardware schedules.</p>
+        </div>
+        <div class="tabpane" id="residential" role="tabpanel" aria-labelledby="residential">
+          <h3>Custom Residential Framing &amp; Finish</h3>
+          <p>Custom homes, precision trim, and finish carpentry—executed with commercial‑grade planning and QC.</p>
+        </div>
+        <div class="tabpane" id="clt" role="tabpanel" aria-labelledby="clt">
+          <h3>CLT (Cross‑Laminated Timber) Assembly</h3>
+          <p>Panel handling, staging, connections, moisture protection, and integration with façade systems.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -55,8 +66,10 @@
   <div class="container footer-inner">
     <div class="column">
       <img class="brand-logo" src="assets/images/logo-stacked.png" alt="GQC logo">
-      <p class="small" style="margin-top:10px">Commercial Wood Framing & Building Envelope</p>
-      <p class="small">Multi-Family • Commercial • Large Apartments</p>
+      <div>
+        <p class="small">Commercial Wood Framing & Building Envelope</p>
+        <p class="small">Multi-Family • Commercial • Large Apartments</p>
+      </div>
     </div>
     <div>
       <h4>Contact</h4>
@@ -66,7 +79,7 @@
     </div>
     <div>
       <h4>Capabilities</h4>
-      <p class="small">Framing • Building Envelope • Windows • Trim • Doors & Hardware</p>
+      <p class="small">Framing • Building Envelope • Windows • Trim • Doors &amp; Hardware</p>
     </div>
   </div>
   <div class="container" style="padding-bottom:24px">

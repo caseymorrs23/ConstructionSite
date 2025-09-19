@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/index.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/about.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/services.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/gallery.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/contact.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/careers.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-01.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-02.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-03.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-04.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-05.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-06.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-07.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-08.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-09.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-10.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-11.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/blog/post-12.html</loc><changefreq>monthly</changefreq></url>
+</urlset>

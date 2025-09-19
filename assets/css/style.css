@@ -19,11 +19,15 @@
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb}
 .footer.black{background:#000;color:#E6E8EA}
 .footer.black a{color:#E6E8EA;text-decoration:underline}
-.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:30px 0}
-.footer .brand-wide{height:48px;width:auto;display:block}
-.footer h4{color:#F3F4F6;margin:0 0 10px}.footer .small{color:#D2D6DA}
-@media(max-width:980px){.grid-3{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr}}
-@media(max-width:680px){.grid-3{grid-template-columns:1fr}.menu{display:none;flex-direction:column;gap:12px;background:var(--white);position:absolute;top:64px;right:16px;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 14px 24px rgba(0,0,0,.08)}.burger{display:block}}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:20px 0}
+.footer .brand-wide{height:30px;max-width:100%;width:auto;display:block;margin-bottom:4px}
+.footer h4{color:#F3F4F6;margin:0 0 8px}.footer .small{color:#E6E8EA}
+.blog-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.blog-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 8px 18px rgba(0,0,0,.06)}
+.blog-card h3{margin:0 0 8px}.blog-card p{margin:0 0 10px;color:#60666c}
+.blog-meta{font-size:12px;color:#8a9096}
+@media(max-width:980px){.grid-3{grid-template-columns:1fr 1fr}.blog-list{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.grid-3,.blog-list{grid-template-columns:1fr}.menu{display:none;flex-direction:column;gap:12px;background:#fff;position:absolute;top:64px;right:16px;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 14px 24px rgba(0,0,0,.08)}.burger{display:block}}
 form,.form{max-width:760px}.form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:680px){.form .row{grid-template-columns:1fr}}
 .form label{display:block;margin:10px 0 6px;font-weight:600;color:#111}

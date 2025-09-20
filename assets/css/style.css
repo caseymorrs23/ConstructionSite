@@ -11,7 +11,7 @@
 .cta:hover{filter:brightness(.93)} .burger{display:none;font-size:28px;cursor:pointer}
 
 .hero.banner{position:relative;height:42vh;min-height:320px;color:#fff;overflow:hidden}
-.hero.banner .bg{position:absolute;inset:0;background:url('/ConstructionSite/assets/images/hero-clean.jpg') center/cover no-repeat;filter:grayscale(.05)}
+.hero.banner .bg{position:absolute;inset:0;background:url('/assets/images/hero-clean.jpg') center/cover no-repeat;filter:grayscale(.05)}
 /* Absolute fallback for GitHub Pages repo subfolder */
 }
 .hero.banner .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,.2))}

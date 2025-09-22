@@ -1,4 +1,4 @@
-# GQC — Guaranteed Quality Construction – Website Bundle
+# GQC — Guaranteed Quality Construction – Website Bundle (Updated V3)
 
 **Brand:** Black & Silver • **Tagline:** Commercial Wood Framing & Building Envelope
 **Services:** Framing • Building Envelope • Windows • Trim • Doors & Hardware

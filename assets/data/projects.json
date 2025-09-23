@@ -1,0 +1,58 @@
+[
+  {
+    "src": "/assets/img/haus-gables-exterior-aerial.jpg",
+    "webp": "/assets/img/haus-gables-exterior-aerial.webp",
+    "title": "Haus Gables \u2014 CLT Exterior",
+    "caption": "Custom CLT residence with distinctive gabled geometry and precision panel assembly.",
+    "category": "Residential (CLT)"
+  },
+  {
+    "src": "/assets/img/clt-panel-lift.jpg",
+    "webp": "/assets/img/clt-panel-lift.webp",
+    "title": "CLT Panel Lift",
+    "caption": "Rigged and flown CLT panel set with verified picks and tag lines for control.",
+    "category": "Residential (CLT)"
+  },
+  {
+    "src": "/assets/img/interior-corridor-framing.jpg",
+    "webp": "/assets/img/interior-corridor-framing.webp",
+    "title": "Interior Corridor Framing",
+    "caption": "Multi\u2011family corridor framing aligned to MEP rough\u2011in and fire\u2011rated details.",
+    "category": "Commercial"
+  },
+  {
+    "src": "/assets/img/glulam-cantilever.jpg",
+    "webp": "/assets/img/glulam-cantilever.webp",
+    "title": "Glulam Cantilever",
+    "caption": "Heavy timber element set for architectural overhang; bolted connections verified.",
+    "category": "Commercial"
+  },
+  {
+    "src": "/assets/img/crew-on-deck.jpg",
+    "webp": "/assets/img/crew-on-deck.webp",
+    "title": "Crew on Deck",
+    "caption": "Production team setting walls with repeatable rhythm for schedule gains.",
+    "category": "Commercial"
+  },
+  {
+    "src": "/assets/img/multifamily-street-elevation.jpg",
+    "webp": "/assets/img/multifamily-street-elevation.webp",
+    "title": "Multifamily Street Elevation",
+    "caption": "Framing progress street\u2011side; window and WRB integration staged next.",
+    "category": "Commercial"
+  },
+  {
+    "src": "/assets/img/man-basket-rigging.jpg",
+    "webp": "/assets/img/man-basket-rigging.webp",
+    "title": "Man Basket Rigging",
+    "caption": "Operator to deck for rigging checks prior to panel lift.",
+    "category": "Residential (CLT)"
+  },
+  {
+    "src": "/assets/img/site-overlook-green-zip.jpg",
+    "webp": "/assets/img/site-overlook-green-zip.webp",
+    "title": "Site Overlook",
+    "caption": "Production view across buildings; ZIP sheathing and layout checkpoints.",
+    "category": "Commercial"
+  }
+]

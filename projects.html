@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Guaranteed Quality Construction Inc.</title>
+  <meta name="description" content="Selected project work across commercial wood framing and custom residential CLT."/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <link rel="canonical" href="https://guaranteedqualityconstruction.net/projects.html"/>
+  <meta property="og:site_name" content="Guaranteed Quality Construction Inc."/>
+  <meta property="og:title" content="Projects — Guaranteed Quality Construction Inc."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://guaranteedqualityconstruction.net/projects.html"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <style>
+    /* minimal guard styles if site.css is cached/old */
+    .projects-hero{position:relative;min-height:46vh;background:#0b0b0c;color:#fff;display:grid;align-items:end;overflow:hidden}
+    .projects-hero .inner{max-width:1100px;margin:0 auto;padding:48px 20px;position:relative;z-index:1}
+    .projects-hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.85)}
+    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .tile{grid-column:span 4;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden}
+    .tile img{display:block;width:100%;height:220px;object-fit:cover}
+    .tile .meta{padding:10px 12px}
+    .tile .meta .tag{margin-top:6px;font-size:.75rem;color:#6b7280}
+    @media(max-width:900px){.tile{grid-column:span 12}}
+    .placeholder{background:repeating-linear-gradient(45deg,#f3f4f6,#f3f4f6 10px,#e5e7eb 10px,#e5e7eb 20px)}
+    .placeholder .meta strong::after{content:" (image pending)";color:#9ca3af;font-weight:400}
+    header.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10;display:flex;align-items:center;gap:18px;padding:10px 18px}
+    header.nav img{height:44px;width:auto}
+    header.nav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:16px;align-items:center}
+    header.nav a{text-decoration:none;color:#111}
+    header.nav a.cta{background:#000;color:#fff;padding:8px 14px;border-radius:10px}
+    footer.footer{background:#000;color:#e5e5e5;margin-top:40px}
+  </style>
+  <script defer src="/assets/js/projects.js"></script>
+</head>
+<body>
+  <header class="nav" aria-label="Primary">
+    <a class="brand" href="/index.html" aria-label="Guaranteed Quality Construction">
+      <img src="/assets/img/logo-stacked.svg" alt="Guaranteed Quality Construction Inc.">
+    </a>
+    <ul class="nav">
+      <li><a href="/index.html">Commercial</a></li>
+      <li><a href="/residential.html">Residential (CLT)</a></li>
+      <li><a href="/projects.html" aria-current="page">Projects</a></li>
+      <li><a href="/insights/index.html">Insights</a></li>
+      <li><a class="cta" href="/request-a-bid.html">Request a Bid</a></li>
+    </ul>
+  </header>
+
+  <section class="projects-hero">
+    <img class="bg" src="/assets/img/framing-sunset-hero.jpg" alt="Framing hero">
+    <div class="inner">
+      <h1>Projects</h1>
+      <p>Selected work across commercial wood framing and custom residential CLT.</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div id="projects-grid" class="gallery">
+      <!-- Filled by projects.js from /assets/data/projects.json -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="foot-col">
+        <img class="footer-logo" src="/assets/img/logo-stacked.svg" alt="Guaranteed Quality Construction Inc. logo"/>
+        <p class="small">© 2025 Guaranteed Quality Construction Inc. All rights reserved.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+12068566202">(206) 856-6202</a><br/>
+           <strong>Email:</strong> <a href="mailto:Tducatt@guaranteedequality.net">Tducatt@guaranteedequality.net</a><br/>
+           <strong>Area:</strong> Serving Washington State</p>
+      </div>
+      <div class="foot-col">
+        <h4>Capabilities</h4>
+        <p class="small">Framing • Building Envelope • Windows • Trim • Doors &amp; Hardware • CLT Assembly</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Guaranteed Quality Construction Inc. All rights reserved.</div>
+  </footer>
+</body>
+</html>

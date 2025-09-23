@@ -1,1 +1,0 @@
-const m=document.querySelector('.menu'),b=document.querySelector('.burger'); if(b){b.onclick=()=>{m.style.display=(m.style.display==='flex'?'none':'flex')}}

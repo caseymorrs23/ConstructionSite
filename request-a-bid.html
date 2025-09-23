@@ -1,53 +1,90 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
 <title>Request a Bid — Guaranteed Quality Construction Inc.</title>
-<meta name="description" content="Guaranteed Quality Construction Inc. — commercial wood framing, building envelope, windows, trim, hardware, and CLT assembly across Washington.">
-<link rel="icon" href="/assets/img/favicon.ico">
-<link rel="stylesheet" href="/assets/css/styles.css">
-<link rel="canonical" href="https://guaranteedqualityconstruction.net/">
-<meta property="og:site_name" content="Guaranteed Quality Construction Inc.">
-<meta property="og:title" content="Request a Bid">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://guaranteedqualityconstruction.net/">
-</head><body><header class="navbar">
-  <div class="container nav-inner">
-    <a class="brand" href="/"><img src="/assets/img/GQC_header_stacked_silver.png" alt="Guaranteed Quality Construction Inc." class="brand-logo"></a>
-    <nav class="nav-links">
-      <a href="/index.html">Commercial</a>
-      <a href="/residential.html">Residential (CLT)</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/insights/index.html">Insights</a>
-      <a class="cta" href="/request-a-bid.html">Request a Bid</a>
-    </nav>
+<meta name="description" content="Request a wood framing or CLT proposal from GQC."/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="canonical" href="https://guaranteedqualityconstruction.net/"/>
+<meta property="og:site_name" content="Guaranteed Quality Construction Inc."/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+<meta property="og:title" content="Request a Bid"/>
+<meta property="og:description" content="Request a wood framing or CLT proposal from GQC."/>
+<meta property="og:image" content="/assets/img/framing-sunset-hero.jpg"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="/index.html"><img src="/assets/img/logo-stacked.svg" alt="Guaranteed Quality Construction logo"/></a>
+  <ul>
+    <li><a href="/index.html">Commercial</a></li>
+    <li><a href="/residential.html">Residential (CLT)</a></li>
+    <li><a href="/projects.html">Projects</a></li>
+    <li><a href="/insights/index.html">Insights</a></li>
+    <li><a class="cta" href="/request-a-bid.html">Request a Bid</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <img class="bg" src="/assets/img/framing-sunset-hero.jpg" alt="" />
+  <div class="inner">
+    <h1>Request a Bid</h1>
+    <p>We respond quickly with scope clarifications and a schedule‑aligned number.</p>
+    <div class="cta-row">
+      <a class="button" href="/projects.html">View Projects</a>
+      <a class="button secondary" href="/request-a-bid.html">Request a Bid</a>
+    </div>
   </div>
-</header><section class="hero"><div class="container"><h1>Request a Bid</h1><p class="lead">Send plans and scope; get an itemized proposal.</p></div></section>
-<section class="section"><div class="container">
-<form method="POST" action="https://formsubmit.co/tducatt@guaranteedquality.net" class="grid" style="grid-template-columns:1fr 1fr;gap:16px;max-width:720px">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://guaranteedqualityconstruction.net/thanks.html">
-  <label>Full Name<input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a2a2a;background:#0e0f11;color:#fff"></label>
-  <label>Phone<input name="phone" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a2a2a;background:#0e0f11;color:#fff"></label>
-  <label style="grid-column:1/3">Email<input name="email" type="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a2a2a;background:#0e0f11;color:#fff"></label>
-  <label style="grid-column:1/3">Project Details<textarea name="message" rows="6" style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a2a2a;background:#0e0f11;color:#fff"></textarea></label>
-  <div style="grid-column:1/3"><button class="btn solid" type="submit">Send Request</button></div>
-</form>
-</div></section>
+</header>
+<section class="section">
+  <h2>Request a Bid</h2>
+  <p>Send plans and scope; we’ll get an itemized, schedule‑aligned proposal.</p>
+  <form method="POST" action="https://formsubmit.co/your@email.com" class="form">
+    <div class="grid">
+      <div class="card" style="grid-column:span 6">
+        <div class="pad">
+          <label>Full Name<br/><input name="name" required placeholder="Your name"/></label>
+        </div>
+      </div>
+      <div class="card" style="grid-column:span 6">
+        <div class="pad">
+          <label>Phone<br/><input name="phone" required placeholder="(xxx) xxx-xxxx"/></label>
+        </div>
+      </div>
+      <div class="card" style="grid-column:span 12">
+        <div class="pad">
+          <label>Email<br/><input type="email" name="email" required placeholder="you@company.com"/></label>
+        </div>
+      </div>
+      <div class="card" style="grid-column:span 12">
+        <div class="pad">
+          <label>Project Details<br/><textarea name="details" rows="6" placeholder="Location, schedule window, scope, level count, drawings link..."></textarea></label>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row"><button class="button" type="submit">Send Request</button></div>
+  </form>
+</section>
+
 <footer class="footer">
-  <div class="container">
-    <div>
-      <img src="/assets/img/GQC_footer_stacked_on_black.png" alt="Guaranteed Quality Construction Inc." class="footer-logo">
-      <p class="small">© 2025 Guaranteed Quality Construction Inc. All rights reserved.</p>
+  <div class="footer-inner">
+    <div class="foot-col foot-brand">
+      <img class="footer-logo" src="/assets/img/logo-stacked.svg" alt="Guaranteed Quality Construction Inc. logo"/>
     </div>
-    <div>
-      <div class="kicker">Contact</div>
-      <p class="small"><strong>Phone:</strong> (206) 856-6202<br>
-      <strong>Email:</strong> Tducatt@guaranteedquality.net<br>
-      <strong>Area:</strong> Serving Washington State</p>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <p><strong>Phone:</strong> <a href="tel:+12068566202">(206) 856-6202</a><br/>
+         <strong>Email:</strong> <a href="mailto:Tducatt@guaranteedequality.net">Tducatt@guaranteedequality.net</a><br/>
+         <strong>Area:</strong> Serving Washington State</p>
     </div>
-    <div>
-      <div class="kicker">Capabilities</div>
-      <p class="small">Framing • Building Envelope • Windows • Trim • Doors &amp; Hardware • CLT Assembly</p>
+    <div class="foot-col">
+      <h4>Capabilities</h4>
+      <p>Framing • Building Envelope • Windows • Trim • Doors &amp; Hardware • CLT Assembly</p>
     </div>
   </div>
-</footer></body></html>
+  <div class="copyright">© 2025 Guaranteed Quality Construction Inc.. All rights reserved.</div>
+</footer>
+
+</body></html>

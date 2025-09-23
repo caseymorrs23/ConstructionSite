@@ -60,3 +60,5 @@ img{max-width:100%;height:auto}
 .section .container{max-width:1200px;margin:0 auto;padding:0 20px}
 .hero.banner .overlay{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.45))}
 
+
+.site-footer .brand-inline{height:38px;margin:0}

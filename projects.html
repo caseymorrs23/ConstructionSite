@@ -1,36 +1,151 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Guaranteed Quality Construction Inc.</title>
-  <meta name="description" content="Projects page for Guaranteed Quality Construction Inc." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects – Guaranteed Quality Construction Inc.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="theme-color" content="#0c0c0c">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Guaranteed Quality Construction Inc.", "url": "https://guaranteedqualityconstruction.net/", "logo": "https://guaranteedqualityconstruction.net/images/gqcblackbackground.png", "email": "mailto:tducatt@guaranteedquality.net", "telephone": "(253) 455-4347", "areaServed": [{"@type": "Place", "name": "Bonney Lake, WA"}], "sameAs": []}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Guaranteed Quality Construction Inc.", "url": "https://guaranteedqualityconstruction.net/"}</script>
+
+  
+  
   <style>
-    :root{--black:#0c0c0c;--white:#fff;--silver:#c0c0c0;--overlay:#000000e6;}
-    body{margin:0;font-family:Arial, sans-serif;background:var(--black);color:var(--white)}
-    .nav{position:sticky;top:0;background:rgba(12,12,12,.9);display:flex;justify-content:space-between;padding:10px 20px}
-    .nav a{color:#cfcfcf;margin:0 10px;text-decoration:none}
-    .nav a.active{color:#fff;border-bottom:2px solid #6b6b6b;padding-bottom:3px}
+    :root{--black:#0c0c0c;--white:#ffffff;--silver:#c0c0c0;--overlay:#000000d0;}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--black);color:var(--white)}
+    header, section, footer{width:100%;}
+    .nav{position:sticky;top:0;z-index:100;background:rgba(12,12,12,.9);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid #1f1f1f}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700;color:#fff;text-decoration:none}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{color:#cfcfcf;text-decoration:none}
+    .menu a:hover{color:#fff}
+    .menu a.active{color:#fff;border-bottom:2px solid #6b6b6b;padding-bottom:3px}
+    .burger{display:none;cursor:pointer;border:1px solid #2a2a2a;border-radius:10px;padding:8px 10px;background:transparent}
+    .burger span{display:block;width:22px;height:2px;background:#cfcfcf;margin:5px 0}
+    @media(max-width:900px){
+      .menu{display:none;position:absolute;top:56px;right:16px;background:#0f0f0f;border:1px solid #222;border-radius:12px;padding:12px;flex-direction:column;min-width:220px}
+      .menu a{padding:10px 6px;font-size:16px}
+      .menu.show{display:flex}
+      .burger{display:block}
+      .nav-inner{padding:10px 14px}
+    }
     .hero{position:relative;min-height:60vh;display:grid;place-items:center;text-align:center;color:#fff}
-    .hero::before{content:'';position:absolute;inset:0;background:var(--overlay)}
+    .hero::before{content:"";position:absolute;inset:0;background:var(--overlay)}
     .hero-content{position:relative;z-index:2;padding:0 1rem;color:#fff}
-    footer{padding:20px;text-align:center;background:#0b0b0b;color:#aaa}
+    .hero h1{font-size:clamp(26px,5vw,50px);margin:0 0 10px;color:#fff;text-shadow:0 3px 8px rgba(0,0,0,.85)}
+    .hero p{max-width:860px;margin:0 auto 20px;color:#fff;font-size:clamp(15px,2vw,18px);text-shadow:0 2px 6px rgba(0,0,0,.85)}
+    .cta{display:inline-block;background:#fff;color:#111;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;margin:0 6px;border:1px solid var(--silver)}
+    .section{padding:40px 20px;max-width:1200px;margin:0 auto}
+    .section h2{font-size:clamp(22px,3vw,34px);margin-bottom:18px;color:var(--silver)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .grid img{width:100%;border-radius:12px;max-height:260px;object-fit:cover;border:1px solid #2b2b2b}
+    form{display:grid;gap:12px;max-width:600px;margin:0 auto}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff}
+    button{background:linear-gradient(180deg,#fff,#e6e6e6);color:#111;padding:12px 18px;border:1px solid var(--silver);border-radius:10px;font-weight:700;cursor:pointer}
+    footer{padding:22px 14px;text-align:center;background:#0b0b0b;color:#a5a5a5;font-size:14px}
   </style>
+
+
+
 </head>
 <body>
-<div class="nav">
-  <div><a href="index.html">Home</a><a href="commercial.html">Commercial</a><a href="residential.html">Residential</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
-</div>
 
-<header class="hero" style="background:url('images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif') center/cover no-repeat;">
-  <div class="hero-content">
-    <h1>Projects</h1>
-    <p>Guaranteed Quality Construction Inc.</p>
+
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Guaranteed Quality Construction Inc.</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="residential.html">Residential</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<header class="hero" style="background:url('images/5dc72fcb-885b-400a-b77e-05a429289268.jfif') center/cover no-repeat;">
+  <div class="container">
+    <h1 style="color:#fff">Projects</h1>
+    <p style="color:#fff">Selected work across commercial framing, custom residential, and CLT.</p>
   </div>
 </header>
 
-<main><section><h2>Projects</h2><p>Highlighted construction projects.</p></section></main>
+<section class="section">
+  <div class="container">
+    <h2 class="h2">Featured Case Study</h2>
+    <div class="grid-3">
+      <div class="card">
+        <picture><source type="image/webp" srcset="images/Haus Gables_Jennifer Bonner_MALL_NAARO (21).webp"><img loading="lazy" decoding="async" loading=\"lazy\" decoding=\"async\" src="images/Haus Gables_Jennifer Bonner_MALL_NAARO (21).jpg" alt="Haus Gables exterior" width="1600" height="1603"></picture>
+        <div class="pad">
+          <span class="badge">CLT</span>
+          <h3>Haus Gables</h3>
+          <p>Cross‑laminated timber residence assembled with precision panel placement and crane coordination.</p>
+          <p><a class="btn" href="projects/haus-gables.html">Open Case Study</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <picture><source type="image/webp" srcset="images/Haus Gables_Construction Process (12).webp"><img loading="lazy" decoding="async" loading=\"lazy\" decoding=\"async\" src="images/Haus Gables_Construction Process (12).jpg" alt="Commercial framing" width="1600" height="1200"></picture>
+        <div class="pad">
+          <span class="badge">Commercial</span>
+          <h3>Multifamily Framing</h3>
+          <p>Representative imagery of large‑scale framing operations and site setup.</p>
+        </div>
+      </div>
+      <div class="card">
+        <picture><source type="image/webp" srcset="images/27dc5459-2d19-42bd-9d74-edb27b70dc38.webp"><img loading="lazy" decoding="async" loading=\"lazy\" decoding=\"async\" src="images/27dc5459-2d19-42bd-9d74-edb27b70dc38.jpg" alt="Custom home" width="1280" height="960"></picture>
+        <div class="pad">
+          <span class="badge">Residential</span>
+          <h3>Custom Residences</h3>
+          <p>Architect‑led builds with modern detailing and clean finishes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net" style="color:#fff">tducatt@guaranteedquality.net</a></footer>
-</body>
-</html>
+<footer class="footer">
+  <div class="container">
+    <div class="grid-3">
+      <div>
+        <div class="logo">
+          <picture><source type="image/webp" srcset="images/gqcblackbackground.webp"><img loading="lazy" decoding="async" loading=\"lazy\" decoding=\"async\" src="images/gqcblackbackground.jpg" alt="GQC logo" width="915" height="727"></picture>
+          <div>
+            <strong>Guaranteed Quality Construction Inc.</strong><br>
+            <small>Commercial Wood Framing • Custom Residential • CLT Specialists</small>
+          </div>
+        </div>
+      </div>
+      <div>
+        <strong>Quick Links</strong><br>
+        <a href="services.html">Services</a><br>
+        <a href="projects.html" class="active" class="active" class="active" style="color:#fff;border-bottom:2px solid #555;padding-bottom:3px;">Projects</a><br>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <strong>Get in touch</strong><br>
+        <small>Email: info@guaranteedqualityconstruction.net</small><br>
+        <small>Website: guaranteedqualityconstruction.net</small>
+      </div>
+    </div>
+    <p style="margin-top:18px;"><small>© <span id="yr"></span> Guaranteed Quality Construction Inc. All rights reserved.</small></p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body></html>
+

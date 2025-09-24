@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://guaranteedqualityconstruction.net/" />
   
+  
   <style>
     :root{--black:#0c0c0c;--white:#fff;--silver:#c0c0c0;--dark:#121212;--overlay:#000000e6;}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--black);color:var(--white)}
@@ -29,7 +30,7 @@
       .nav-inner{padding:10px 14px}
     }
     .hero{position:relative;min-height:60vh;display:grid;place-items:center;text-align:center;color:#fff}
-    .hero::before{content:"";position:absolute;inset:0;background:var(--overlay)}
+    .hero::before{content:\"\";position:absolute;inset:0;background:var(--overlay)}
     .hero-content{position:relative;z-index:2;padding:0 1rem}
     .hero h1{font-size:clamp(26px,5vw,50px);margin:0 0 10px;text-shadow:0 3px 8px rgba(0,0,0,.85)}
     .hero p{max-width:860px;margin:0 auto 20px;color:#f0f0f0;font-size:clamp(15px,2vw,18px);text-shadow:0 2px 6px rgba(0,0,0,.85)}
@@ -44,12 +45,14 @@
     footer{padding:22px 14px;text-align:center;background:#0b0b0b;color:#a5a5a5;font-size:14px}
   </style>
 
+
 </head>
 <body>
 
+
 <nav class="nav">
   <div class="nav-inner">
-    <a class="brand" href="index.html">Guaranteed Quality Construction Inc.</a>
+    <a class="brand" href="index.html" class="active">Guaranteed Quality Construction Inc.</a>
     <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
       <span></span><span></span><span></span>
     </button>
@@ -63,6 +66,7 @@
     </div>
   </div>
 </nav>
+
 
 <a id="top"></a>
 

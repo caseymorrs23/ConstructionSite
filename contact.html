@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Guaranteed Quality Construction Inc.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="theme-color" content="#0c0c0c">
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">
+      <img src="images/gqcblackbackground.png" alt="GQC logo">
+      <span class="logo-title">Guaranteed Quality Construction Inc.</span>
+    </a>
+    <div class="menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="commercial.html">Commercial</a><a href="residential.html">Residential</a><a href="projects.html">Projects</a><a href="contact.html" style="color:#fff;border-bottom:2px solid #555;padding-bottom:3px;">Contact</a></div>
+  </div>
+</nav>
+
+<header class="hero" style="min-height:40vh">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Tell us about your project. We’ll get back quickly.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2 class="h2">Send a Message</h2>
+    <form class="contactform" action="https://formsubmit.co/tducatt@guaranteedquality.net" method="POST">
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New inquiry from GuaranteedQualityConstruction.net">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://guaranteedqualityconstruction.net/thank-you.html">
+      <div class="row">
+        <div>
+          <label for="name">Name</label><br>
+          <input id="name" name="name" required placeholder="Your name">
+        </div>
+        <div>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="phone">Phone</label><br>
+          <input id="phone" name="phone" placeholder="(###) ###‑####">
+        </div>
+        <div>
+          <label for="company">Company</label><br>
+          <input id="company" name="company" placeholder="Company / Organization">
+        </div>
+      </div>
+      <div style="margin-top:12px">
+        <label for="message">Project Details</label><br>
+        <textarea id="message" name="message" rows="6" required placeholder="Tell us about scope, location, timeline…"></textarea>
+      </div>
+      <div style="margin-top:14px">
+        <button class="btn" type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid-3">
+      <div>
+        <div class="logo">
+          <img src="images/gqcblackbackground.png" alt="GQC logo">
+          <div>
+            <strong>Guaranteed Quality Construction Inc.</strong><br>
+            <small>Commercial Wood Framing • Custom Residential • CLT Specialists</small>
+          </div>
+        </div>
+      </div>
+      <div>
+        <strong>Quick Links</strong><br>
+        <a href="services.html">Services</a><br>
+        <a href="projects.html">Projects</a><br>
+        <a href="contact.html" style="color:#fff;border-bottom:2px solid #555;padding-bottom:3px;">Contact</a>
+      </div>
+      <div>
+        <strong>Get in touch</strong><br>
+        <small>Email: info@guaranteedqualityconstruction.net</small><br>
+        <small>Website: guaranteedqualityconstruction.net</small>
+      </div>
+    </div>
+    <p style="margin-top:18px;"><small>© <span id="yr"></span> Guaranteed Quality Construction Inc. All rights reserved.</small></p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body></html>
+

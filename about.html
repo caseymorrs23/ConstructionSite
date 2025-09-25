@@ -43,6 +43,14 @@
     button{background:linear-gradient(180deg,#fff,#e6e6e6);color:#111;padding:12px 18px;border:1px solid var(--silver);border-radius:10px;font-weight:700;cursor:pointer}
     footer{padding:22px 14px;text-align:center;background:#0b0b0b;color:#a5a5a5;font-size:14px}
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const fallback = 'images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif';
+      document.querySelectorAll('img').forEach(img=>{
+        img.addEventListener('error',()=>{ img.src = fallback; });
+      });
+    });
+  </script>
 </head>
 <body>
 <nav class="nav">

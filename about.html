@@ -42,13 +42,6 @@
     button{background:linear-gradient(180deg,#fff,#e6e6e6);color:#111;padding:12px 18px;border:1px solid var(--silver);border-radius:10px;font-weight:700;cursor:pointer}
     footer{padding:22px 14px;text-align:center;background:#0b0b0b;color:#a5a5a5;font-size:14px}
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded',()=>{
-      document.querySelectorAll('img').forEach(img=>{
-        img.addEventListener('error',()=>{ console.warn('Missing image:', img.getAttribute('src')); });
-      });
-    });
-  </script>
 </head>
 <body>
 <nav class="nav">
@@ -67,23 +60,26 @@
     </div>
   </div>
 </nav>
-
-<header class="hero" style="background:url('images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jfif') center/cover no-repeat;" aria-label="About hero">
+<header class="hero" style="background:url('images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jfif') center/cover no-repeat;" aria-label="About hero image">
   <div class="hero-content">
-    <h1>About Guaranteed Quality Construction Inc.</h1>
-    <p>We’re a framing contractor focused on commercial wood framing with additional specialty in high‑end residential and CLT. Communication, safety, and disciplined scheduling are at the center of how we build.</p>
-    <a href="contact.html" class="cta">Contact Us</a>
+    <h1>About</h1>
+    <p>Guaranteed Quality Construction Inc.</p>
   </div>
 </header>
+
 <main class="section">
+  <h2>About Guaranteed Quality Construction Inc.</h2>
+  <p>We are a framing contractor focused on commercial wood framing, with additional specialty in high-end residential and CLT. Our approach emphasizes clear communication, safety-first culture, and disciplined scheduling.</p>
+</main>
+<section class="section">
   <h2>What We Bring</h2>
   <ul>
     <li>Experienced superintendents and foremen</li>
     <li>Accurate layout and tolerance control</li>
-    <li>Coordination with MEP rough‑in requirements</li>
+    <li>Coordination with MEP rough-in requirements</li>
     <li>Clean documentation and inspections</li>
   </ul>
-</main>
+</section>
 
 <footer>
   <p>© 2025 Guaranteed Quality Construction Inc. | Contact: <a href="mailto:tducatt@guaranteedquality.net" style="color:#fff">tducatt@guaranteedquality.net</a></p>

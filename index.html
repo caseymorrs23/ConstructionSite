@@ -1,12 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Guaranteed Quality Construction Inc.</title>
-  <meta name="description" content="Guaranteed Quality Construction Inc. – Specialists in Commercial Wood Framing, with expertise in Custom Residential Homes and CLT Projects." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://guaranteedqualityconstruction.net/" />
+  <title>Home | Guaranteed Quality Construction Inc.</title>
+  <meta name="description" content="Home — Guaranteed Quality Construction Inc.">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
@@ -32,10 +28,11 @@
     }
     .hero{position:relative;min-height:60vh;display:grid;place-items:center;text-align:center;color:#fff}
     .hero::before{content:"";position:absolute;inset:0;background:var(--overlay)}
-    .hero-content{position:relative;z-index:2;padding:0 1rem;color:#fff}
-    .hero h1{font-size:clamp(26px,5vw,50px);margin:0 0 10px;color:#fff;text-shadow:0 3px 8px rgba(0,0,0,.85)}
-    .hero p{max-width:860px;margin:0 auto 20px;color:#fff;font-size:clamp(15px,2vw,18px);text-shadow:0 2px 6px rgba(0,0,0,.85)}
-    .cta{display:inline-block;background:#fff;color:#111;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;margin:0 6px;border:1px solid var(--silver)}
+    .hero-content{position:relative;z-index:2;padding:0 1rem;color:#fff;max-width:1000px;margin:0 auto}
+    .hero h1{font-size:clamp(28px,6vw,56px);margin:0 0 12px;color:#fff;text-shadow:0 3px 8px rgba(0,0,0,.85)}
+    .hero p{max-width:900px;margin:0 auto 22px;color:#fff;font-size:clamp(16px,2.2vw,20px);line-height:1.5;text-shadow:0 2px 6px rgba(0,0,0,.85)}
+    .cta{display:inline-block;background:#fff;color:#111;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;margin:0 8px;border:1px solid var(--silver)}
+    .cta.secondary{background:transparent;color:#fff;border:1px solid #c0c0c0}
     .section{padding:40px 20px;max-width:1200px;margin:0 auto}
     .section h2{font-size:clamp(22px,3vw,34px);margin-bottom:18px;color:#c0c0c0}
     .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -45,6 +42,13 @@
     button{background:linear-gradient(180deg,#fff,#e6e6e6);color:#111;padding:12px 18px;border:1px solid var(--silver);border-radius:10px;font-weight:700;cursor:pointer}
     footer{padding:22px 14px;text-align:center;background:#0b0b0b;color:#a5a5a5;font-size:14px}
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('img').forEach(img=>{
+        img.addEventListener('error',()=>{ console.warn('Missing image:', img.getAttribute('src')); });
+      });
+    });
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -63,6 +67,7 @@
     </div>
   </div>
 </nav>
+
 <header class="hero" style="background:url('images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif') center/cover no-repeat;" aria-label="Commercial wood framing crews at work">
   <div class="hero-content">
     <h1 style="color:#fff">Building With Guaranteed Quality</h1>
@@ -75,7 +80,12 @@
   <h2>Our Expertise</h2>
   <p>Guaranteed Quality Construction Inc. is a trusted partner for large-scale commercial wood framing projects, high-end residential builds, and cross-laminated timber (CLT) construction. Our team combines decades of experience with innovative practices to deliver lasting results.</p>
   <div class="grid">
-    <img src="images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif" alt="Commercial framing"><img src="images/5dc72fcb-885b-400a-b77e-05a429289268.jfif" alt="Commercial framing"><img src="images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jfif" alt="Commercial framing"><img src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif" alt="Commercial framing"><img src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jfif" alt="Commercial framing"><img src="images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jfif" alt="Commercial framing">
+    <img src="images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif" alt="Commercial wood framing crew on site">
+    <img src="images/5dc72fcb-885b-400a-b77e-05a429289268.jfif" alt="Multifamily framing with crane coordination">
+    <img src="images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jfif" alt="Framers installing sheathing on upper floor">
+    <img src="images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif" alt="Large-scale wood framing progress">
+    <img src="images/5dc72fcb-885b-400a-b77e-05a429289268.jfif" alt="Wall panel staging at commercial site">
+    <img src="images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jfif" alt="Framing layout and bracing detail">
   </div>
 </section>
 <section id="contact" class="section">
@@ -89,8 +99,9 @@
     <button type="submit">Send Message</button>
   </form>
 </section>
+
 <footer>
-  <p>© 2025 Guaranteed Quality Construction Inc. | Built with quality and precision | Contact: <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  <p>© 2025 Guaranteed Quality Construction Inc. | Contact: <a href="mailto:tducatt@guaranteedquality.net" style="color:#fff">tducatt@guaranteedquality.net</a></p>
 </footer>
 </body>
 </html>

@@ -1,33 +1,39 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projects — GQC</title>
-<link rel="icon" type="image/png" href="images/favicon.png"/>
-<link rel="stylesheet" href="styles.css"/>
-</head><body>
-<nav class="nav"><div class="nav-inner">
-<a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-<button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
-<div class="menu">
-  <a class="" href="index.html">Home</a>
-  <a class="" href="commercial.html">Commercial</a>
-  <a class="" href="residential.html">Residential</a>
-  <a class="active" href="projects.html">Projects</a>
-  <a class="" href="about.html">About</a>
-  <a class="" href="contact.html">Contact</a>
-</div></div></nav>
-<header class="hero"><div class="bg" style="background-image:url('images/clt-house-2-01.jpg')"></div>
-<div class="hero-content"><span class="kicker">Guaranteed Quality Construction</span><h1>Selected Projects</h1><p>From mid‑rise commercial to architect‑driven CLT homes — a sample of recent work.</p>
-</div></header>
-
-<section class="actions" aria-label="Projects actions" style="padding:22px 0">
-  <div class="container">
-    <a class="cta" href="residential.html">Residential & CLT</a>
-    <a class="cta" href="contact.html">Contact</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Construction Projects — GQC</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="commercial.html">Commercial</a>
+        <a class="" href="residential.html">Residential</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+<header class="hero">
+  <div class="bg" style="background-image:url('images/clt-house-2-01.jpg')"></div>
+  <div class="hero-content">
+    <span class="kicker">Guaranteed Quality Construction</span>
+    <h1>Construction Projects: Residential, CLT & Commercial</h1>
+    <p>Browse selected work — from cross‑laminated timber homes and custom residential builds to large multifamily commercial framing.</p>
+    <div class="actions"><a href="residential.html" class="cta">Residential & CLT</a> <a href="commercial.html" class="cta">Commercial Framing</a></div>
   </div>
-</section>
-
-
+</header>
 <section class="section" id="residential"><div class="container">
   <h2>Residential — CLT & Custom</h2>
   <div class="grid cols-4">
@@ -44,12 +50,19 @@
 <section class="section" id="commercial"><div class="container">
   <h2>Commercial Wood Framing</h2>
   <div class="grid cols-3">
-    <img src="images/4b457db6-5862-476c-a793-d3c7d1438c78.jfif" alt="Framing">
+    <img src="images/c119fbb6-151c-4b19-8c22-82d33b347239.jfif" alt="Framing">
     <img src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jfif" alt="Framing">
     <img src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif" alt="Framing">
   </div>
 </div></section>
 
-<footer><p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p></footer>
-<script>document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.menu').classList.remove('show');}));</script>
-</body></html>
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
+</body>
+</html>

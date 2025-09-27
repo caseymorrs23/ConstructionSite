@@ -1,26 +1,41 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Contact — GQC</title>
-<link rel="icon" type="image/png" href="images/favicon.png"/>
-<link rel="stylesheet" href="styles.css"/>
-</head><body>
-<nav class="nav"><div class="nav-inner">
-<a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-<button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
-<div class="menu">
-  <a class="" href="index.html">Home</a>
-  <a class="" href="commercial.html">Commercial</a>
-  <a class="" href="residential.html">Residential</a>
-  <a class="" href="projects.html">Projects</a>
-  <a class="" href="about.html">About</a>
-  <a class="active" href="contact.html">Contact</a>
-</div></div></nav>
-<header class="hero"><div class="bg" style="background-image:url('images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif')"></div>
-<div class="hero-content"><span class="kicker">Guaranteed Quality Construction</span><h1>Request a Bid</h1><p>Send plans and scope — we’ll respond quickly and get your project moving.</p>
-</div></header>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Construction Bid — GQC</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="commercial.html">Commercial</a>
+        <a class="" href="residential.html">Residential</a>
+        <a class="" href="projects.html">Projects</a>
+        <a class="" href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+<header class="hero">
+  <div class="bg" style="background-image:url('images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif')"></div>
+  <div class="hero-content">
+    <span class="kicker">Guaranteed Quality Construction</span>
+    <h1>Request a Construction Bid</h1>
+    <p>Send drawings and scope details. Our estimating team will review, ask clarifying questions, and provide a clear proposal and schedule assumptions.</p>
+    <div class="actions"><a href="mailto:tducatt@guaranteedquality.net" class="cta">Email Estimating</a> <a href="#contact-form" class="cta">Use the Form</a></div>
+  </div>
+</header>
 <section class="section"><div class="container">
-  <form class="card" method="post" action="#" onsubmit="alert('Thanks — we’ll be in touch shortly.'); return false;">
+  <form id="contact-form" class="card" method="post" action="#" onsubmit="alert('Thanks — we’ll be in touch shortly.'); return false;">
     <div class="grid">
       <div><label>Full Name</label><input type="text" name="name" placeholder="Your name" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></div>
       <div><label>Email</label><input type="email" name="email" placeholder="you@example.com" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></div>
@@ -30,6 +45,13 @@
   </form>
 </div></section>
 
-<footer><p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p></footer>
-<script>document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.menu').classList.remove('show');}));</script>
-</body></html>
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
+</body>
+</html>

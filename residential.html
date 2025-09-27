@@ -1,33 +1,39 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Residential & CLT — GQC</title>
-<link rel="icon" type="image/png" href="images/favicon.png"/>
-<link rel="stylesheet" href="styles.css"/>
-</head><body>
-<nav class="nav"><div class="nav-inner">
-<a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-<button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
-<div class="menu">
-  <a class="" href="index.html">Home</a>
-  <a class="" href="commercial.html">Commercial</a>
-  <a class="active" href="residential.html">Residential</a>
-  <a class="" href="projects.html">Projects</a>
-  <a class="" href="about.html">About</a>
-  <a class="" href="contact.html">Contact</a>
-</div></div></nav>
-<header class="hero"><div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
-<div class="hero-content"><span class="kicker">Guaranteed Quality Construction</span><h1>Custom Residential & CLT</h1><p>Architect‑driven custom homes and mass timber work delivered with precision, safety, and clean execution.</p>
-</div></header>
-
-<section class="actions" aria-label="Residential actions" style="padding:22px 0">
-  <div class="container">
-    <a class="cta" href="projects.html#residential">See CLT & Custom Projects</a>
-    <a class="cta" href="contact.html">Request a Bid</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Custom Residential & CLT — GQC</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="commercial.html">Commercial</a>
+        <a class="active" href="residential.html">Residential</a>
+        <a class="" href="projects.html">Projects</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+<header class="hero">
+  <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
+  <div class="hero-content">
+    <span class="kicker">Guaranteed Quality Construction</span>
+    <h1>Custom Residential Builder & Cross‑Laminated Timber (CLT)</h1>
+    <p>High‑end, architect‑led homes and mass timber scopes. We coordinate budgeting, framing, and finish interfaces to deliver clean details and durable results.</p>
+    <div class="actions"><a href="projects.html#residential" class="cta">See Residential & CLT</a> <a href="contact.html" class="cta">Request a Bid</a></div>
   </div>
-</section>
-
-
+</header>
 <section class="section"><div class="container">
   <h2>Finished — Haus Gables (White CLT House)</h2>
   <div class="grid cols-3">
@@ -49,12 +55,15 @@
     <img src="images/Haus-Gables-Construction-5.jpg" alt="Site build process">
     <img src="images/27dc5459-2d19-42bd-9d74-edb27b70dc38.jfif" alt="Final white roof geometry aerial">
   </div>
-  <div class="actions" style="margin-top:16px">
-    <a class="cta" href="projects.html#residential">See more projects</a>
-    <a class="cta" href="contact.html">Request a Bid</a>
-  </div>
 </div></section>
 
-<footer><p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p></footer>
-<script>document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.menu').classList.remove('show');}));</script>
-</body></html>
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
+</body>
+</html>

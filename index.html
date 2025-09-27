@@ -7,6 +7,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="images/27dc5459-2d19-42bd-9d74-edb27b70dc38.jfif"/>
 </head>
 <body>
   <nav class="nav">
@@ -39,15 +40,62 @@
     <h2>Our Expertise</h2>
     <p class="lead">We specialize in commercial wood framing for mid-rise multifamily and mixed-use structures, delivering projects on schedule and to spec. We also provide high-end custom residential construction and execute CLT scopes with precision and durability.</p>
     <div class="grid cols-3">
-      <img src="images/c119fbb6-151c-4b19-8c22-82d33b347239.jfif" alt="Commercial wood framing site exterior">
-      <img src="images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jfif" alt="Commercial interior corridor rough-in">
-      <img src="images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jfif" alt="Commercial wood framing crane view">
-      <img src="images/f334cd4d-dccb-4eaf-b8d1-9375b5b78c96.jfif" alt="Rafter assembly detail">
-      <img src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jfif" alt="Aerial deck view with layout">
-      <img src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif" alt="Commercial corridor with lighting">
+      <img decoding="async" loading="lazy" src="images/c119fbb6-151c-4b19-8c22-82d33b347239.jfif sizes="(min-width:1024px) 33vw, 100vw" alt="Commercial wood framing site exterior">
+      <img decoding="async" loading="lazy" src="images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jfif sizes="(min-width:1024px) 33vw, 100vw" alt="Commercial interior corridor rough-in">
+      <img decoding="async" loading="lazy" src="images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jfif sizes="(min-width:1024px) 33vw, 100vw" alt="Commercial wood framing crane view">
+      <img decoding="async" loading="lazy" src="images/f334cd4d-dccb-4eaf-b8d1-9375b5b78c96.jfif sizes="(min-width:1024px) 33vw, 100vw" alt="Rafter assembly detail">
+      <img decoding="async" loading="lazy" src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jfif sizes="(min-width:1024px) 33vw, 100vw" alt="Aerial deck view with layout">
+      <img decoding="async" loading="lazy" src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif sizes="(min-width:1024px) 33vw, 100vw" alt="Commercial corridor with lighting">
     </div>
   </div>
 </section>
+
+  <!-- Request a Quote Form -->
+  <section class="section light" id="quote">
+    <div class="container">
+      <h2>Request a Quote</h2>
+      <p class="lead">Tell us about your commercial framing or residential project. We’ll review drawings, confirm scope and return a clear proposal and schedule assumptions.</p>
+      <form class="card" method="post" action="#" onsubmit="alert('Thanks — we\'ll be in touch shortly.'); return false;">
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="grid">
+          <div>
+            <label>Full Name *</label>
+            <input type="text" name="name" required placeholder="Your name" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" />
+          </div>
+          <div>
+            <label>Email *</label>
+            <input type="email" name="email" required placeholder="you@example.com" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" />
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <div>
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="(###) ###-####" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" />
+          </div>
+          <div>
+            <label>Project Type *</label>
+            <select name="type" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd">
+              <option value="" disabled selected>Select one</option>
+              <option>Commercial Wood Framing</option>
+              <option>Custom Residential</option>
+              <option>Cross‑Laminated Timber (CLT)</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label>Project Location</label>
+          <input type="text" name="location" placeholder="City, State" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" />
+        </div>
+        <div style="margin-top:12px">
+          <label>Message *</label>
+          <textarea name="message" rows="6" required placeholder="Scope, timeline, and any files you can share" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></textarea>
+        </div>
+        <div class="actions" style="margin-top:14px">
+          <button class="btn" type="submit">Send Request</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>

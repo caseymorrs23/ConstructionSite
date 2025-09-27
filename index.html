@@ -4,30 +4,161 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Building With Guaranteed Quality</title>
+  <meta name="description" content="Commercial wood framing is our core. We also deliver high‑end custom residential homes and CLT projects — always with precision, safety, and integrity." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://guaranteedqualityconstruction.net/" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
+<style>
+/* Preview-only inline CSS so the canvas matches your polished site. External styles.css stays for deployment. */
+:root{--bg:#0b0c10;--text:#1a1a1a;--muted:#6b7280;--accent:#eab308;--accent-ink:#111;--surface:#fff;--surface-2:#f6f7f9;--radius:14px;--shadow:0 10px 25px rgba(0,0,0,.08);--container:1200px}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:50;background:var(--surface);box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.nav-inner{max-width:var(--container);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.brand{font-weight:800;letter-spacing:.2px;text-decoration:none;color:#111;font-size:1.1rem}
+.brand small{font-weight:600;color:var(--muted);margin-left:.35rem}
+.menu{display:flex;gap:18px;align-items:center}
+.menu a{color:#111;text-decoration:none;padding:8px 10px;border-radius:10px;transition:transform .15s ease, background .2s ease}
+.menu a:hover{background:#f2f3f5;transform:translateY(-1px)}
+.menu a.active{background:#eef2ff}
+.burger{display:none;background:transparent;border:0;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:#111;margin:5px 0}
+@media(max-width:880px){.menu{display:none;position:absolute;right:12px;top:58px;background:var(--surface);padding:10px;border:1px solid #eee;border-radius:12px;box-shadow:var(--shadow);flex-direction:column}.menu.show{display:flex}.burger{display:block}}
+.hero{position:relative;min-height:64vh;display:grid;place-items:center;color:#fff}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.35))}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:900px;padding:40px 20px}
+.kicker{display:inline-block;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.9;margin-bottom:8px}
+.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.12;margin:6px 0 10px}
+.hero p{font-size:clamp(16px,2.4vw,19px);opacity:.95;margin:0 auto 18px;max-width:760px}
+.cta,.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:12px;font-weight:700;text-decoration:none;border:1px solid rgba(0,0,0,.06);box-shadow:0 6px 16px rgba(234,179,8,.25);transition:transform .15s ease, box-shadow .15s ease}
+.cta:hover,.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(234,179,8,.35)}
+.section{padding:52px 0}
+.section.light{background:var(--surface-2)}
+.section h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 8px}
+.lead{color:var(--muted);max-width:900px}
+.card{background:var(--surface);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.06)}
+.card h3{margin-top:0}
+.grid,.gallery,.projects-grid,.portfolio-grid,.thumbs,.img-grid{display:grid;gap:16px}
+.grid img,.gallery img,.projects-grid img,.portfolio-grid img,.thumbs img,.img-grid img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+img.logo,img[alt*="logo" i],img[alt*="icon" i]{aspect-ratio:auto !important;object-fit:contain !important;border-radius:0 !important}
+.grid{grid-template-columns:1fr}
+@media(min-width:1024px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-4{grid-template-columns:repeat(4,1fr)}.grid:not(.cols-3):not(.cols-4){grid-template-columns:repeat(3,1fr)}}
+footer{background:#0f1115;color:#d1d5db}
+footer a{color:#fff}
+footer p{margin:0;padding:22px}
+</style>
 </head>
 <body>
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-    <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="commercial.html">Commercial</a>
-      <a href="residential.html">Residential</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
-<header class="hero" aria-label="Hero"><div class="bg" style="background-image:url('images/4b457db6-5862-476c-a793-d3c7d1438c78.jfif')"></div><div class="hero-content"><span class="kicker">Guaranteed Quality Construction</span><h1>Building With Guaranteed Quality</h1><p>Commercial wood framing is our core. We also deliver high‑end custom residential homes and CLT projects — always with precision, safety, and integrity.</p><div><a href="commercial.html" class="cta">Commercial Framing</a><a href="contact.html" class="cta">Request a Bid</a></div></div></header><section class="section"><h2>Our Expertise</h2><p class="lead">We are a commercial wood framing specialist with the capacity to deliver mid-rise multifamily and mixed-use structures at speed and quality. We also build high-end custom residential homes and execute CLT scopes with precision.</p><div class="grid"><img src="images/4b457db6-5862-476c-a793-d3c7d1438c78.jfif" alt="Commercial wood framing"><img src="images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jfif" alt="Commercial wood framing"><img src="images/f334cd4d-dccb-4eaf-b8d1-9375b5b78c96.jfif" alt="Commercial wood framing"><img src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jfif" alt="Commercial wood framing"><img src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif" alt="Commercial wood framing"><img src="images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif" alt="Commercial wood framing"></div></section><section class="section" id="clt-house-2"><h2>Featured Project: CLT Custom Home</h2><p class="lead">Cross‑Laminated Timber (CLT) residence showcasing precision installs, clean connections, and schedule‑driven sequencing.</p><div class="grid cols-4"><img src="images/clt-house-2-01.jpg" alt="CLT house exterior angle"><img src="images/clt-house-2-02.jpg" alt="CLT panel installation"><img src="images/clt-house-2-03.jpg" alt="CLT interior volume"><img src="images/clt-house-2-04.jpg" alt="CLT roof assembly"><img src="images/clt-house-2-05.jpg" alt="Detail: CLT connection"><img src="images/clt-house-2-06.jpg" alt="Completed CLT facade"><img src="images/clt-house-2-07.jpg" alt="CLT interior wall during finishing"><img src="images/clt-house-2-08.jpg" alt="Additional CLT exterior view"></div><div class="container" style="margin-top:16px"><a class="cta" href="projects.html#clt">See more CLT projects</a><a class="cta" href="contact.html" style="margin-left:8px">Request a Bid</a></div></section><section class="section" id="haus-gables"><h2>Featured Project: Haus Gables — White CLT House</h2><p class="lead">Designed by Jennifer Bonner, Haus Gables is the second CLT residence built in the U.S. This striking white home demonstrates the versatility and bold geometry possible with mass timber.</p><div class="grid cols-3"><img src="images/haus-gables-finished.jpg" alt="Haus Gables finished white CLT home"><img src="images/Haus-Gables-Construction-1.jpg" alt="Haus Gables CLT construction aerial view"><img src="images/Haus-Gables-Construction-2.jpg" alt="Haus Gables panel lifting by crane"><img src="images/Haus-Gables-Construction-3.jpg" alt="Haus Gables geometric roof structure"><img src="images/Haus-Gables-Construction-4.jpg" alt="Haus Gables wall assembly progress"><img src="images/Haus-Gables-Construction-5.jpg" alt="Haus Gables site build process"></div><div class="container" style="margin-top:16px"><a class="cta" href="projects.html#clt">See more CLT projects</a><a class="cta" href="contact.html" style="margin-left:8px">Request a Bid</a></div></section>
-<footer>
-  <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
-</footer>
-<script>document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.menu').classList.remove('show');});});</script>
+  </nav>
+
+  <header class="hero" aria-label="Hero">
+    <div class="bg" style="background-image:url('images/4b457db6-5862-476c-a793-d3c7d1438c78.jfif')"></div>
+    <div class="hero-content">
+      <span class="kicker">Guaranteed Quality Construction</span>
+      <h1>Building With Guaranteed Quality</h1>
+      <p>Commercial wood framing is our core. We also deliver high‑end custom residential homes and CLT projects — always with precision, safety, and integrity.</p>
+      <div>
+        <a href="commercial.html" class="cta">Commercial Framing</a>
+        <a href="contact.html" class="cta">Request a Bid</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Our Expertise</h2>
+    <p class="lead">We are a commercial wood framing specialist with the capacity to deliver mid-rise multifamily and mixed-use structures at speed and quality. We also build high-end custom residential homes and execute CLT scopes with precision.</p>
+    <div class="grid cols-3">
+      <img src="images/4b457db6-5862-476c-a793-d3c7d1438c78.jfif" alt="Commercial wood framing">
+      <img src="images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jfif" alt="Commercial wood framing">
+      <img src="images/f334cd4d-dccb-4eaf-b8d1-9375b5b78c96.jfif" alt="Commercial wood framing">
+      <img src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jfif" alt="Commercial wood framing">
+      <img src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jfif" alt="Commercial wood framing">
+      <img src="images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif" alt="Commercial wood framing">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Commercial Wood Framing</h3>
+        <p>From podium to Type V, our crews coordinate seamlessly with cranes and trades to keep schedules moving.</p>
+        <a href="commercial.html" class="cta">Explore Commercial</a>
+      </div>
+      <div class="card">
+        <h3>Custom Residential</h3>
+        <p>Architect-driven, detail-rich homes with exceptional finishes and craft.</p>
+        <a href="residential.html" class="cta">Explore Residential</a>
+      </div>
+      <div class="card">
+        <h3>CLT & Mass Timber</h3>
+        <p>Specialized installation of CLT panels and hybrid assemblies.</p>
+        <a href="residential.html#clt" class="cta">See CLT Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clt-house-2">
+    <h2>Featured Project: CLT Custom Home</h2>
+    <p class="lead">Cross‑Laminated Timber (CLT) residence showcasing precision installs, clean connections, and schedule‑driven sequencing.</p>
+    <div class="grid cols-4">
+      <img src="images/clt-house-2-01.jpg" alt="CLT house exterior angle">
+      <img src="images/clt-house-2-02.jpg" alt="CLT panel installation">
+      <img src="images/clt-house-2-03.jpg" alt="CLT interior volume">
+      <img src="images/clt-house-2-04.jpg" alt="CLT roof assembly">
+      <img src="images/clt-house-2-05.jpg" alt="Detail: CLT connection">
+      <img src="images/clt-house-2-06.jpg" alt="Completed CLT facade">
+      <img src="images/clt-house-2-07.jpg" alt="CLT interior wall during finishing">
+      <img src="images/clt-house-2-08.jpg" alt="Additional CLT exterior view">
+    </div>
+    <div class="container" style="margin-top:16px">
+      <a class="cta" href="projects.html#clt">See more CLT projects</a>
+      <a class="cta" href="contact.html" style="margin-left:8px">Request a Bid</a>
+    </div>
+  </section>
+
+  <section class="section" id="haus-gables">
+    <h2>Featured Project: Haus Gables — White CLT House</h2>
+    <p class="lead">Designed by Jennifer Bonner, Haus Gables is the second CLT residence built in the U.S. This striking white home demonstrates the versatility and bold geometry possible with mass timber.</p>
+    <div class="grid cols-3">
+      <img src="images/haus-gables-finished.jpg" alt="Haus Gables finished white CLT home">
+      <img src="images/Haus-Gables-Construction-1.jpg" alt="Haus Gables CLT construction aerial view">
+      <img src="images/Haus-Gables-Construction-2.jpg" alt="Haus Gables panel lifting by crane">
+      <img src="images/Haus-Gables-Construction-3.jpg" alt="Haus Gables geometric roof structure">
+      <img src="images/Haus-Gables-Construction-4.jpg" alt="Haus Gables wall assembly progress">
+      <img src="images/Haus-Gables-Construction-5.jpg" alt="Haus Gables site build process">
+    </div>
+    <div class="container" style="margin-top:16px">
+      <a class="cta" href="projects.html#clt">See more CLT projects</a>
+      <a class="cta" href="contact.html" style="margin-left:8px">Request a Bid</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | Building with quality and precision | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
 </body>
 </html>

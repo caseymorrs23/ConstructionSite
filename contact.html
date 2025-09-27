@@ -15,18 +15,26 @@
       <span></span><span></span><span></span>
     </button>
     <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="commercial.html">Commercial</a>
-      <a href="residential.html">Residential</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a class="" href="index.html">Home</a>
+      <a class="" href="commercial.html">Commercial</a>
+      <a class="" href="residential.html">Residential</a>
+      <a class="" href="projects.html">Projects</a>
+      <a class="" href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
-<header class="hero"><div class="bg" style="background-image:url('images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif')"></div>
-<div class="hero-content"><span class="kicker">Contact</span><h1>Request a Bid</h1><p>Send plans and scope — we’ll respond quickly and get your project moving.</p></div></header>
+<header class="hero">
+  <div class="bg" style="background-image:url('images/02dd5ec6-0349-4eab-a79d-a5b1348df061.jfif')"></div>
+  <div class="hero-content">
+    <span class="kicker">Guaranteed Quality Construction</span>
+    <h1>Request a Bid</h1>
+    <p>Send plans and scope — we’ll respond quickly and get your project moving.</p>
+  </div>
+</header>
+
+
 <section class="section"><div class="container">
   <form class="card" method="post" action="#" onsubmit="alert('Thanks — we’ll be in touch shortly.'); return false;">
     <div class="grid">
@@ -34,13 +42,16 @@
       <div><label>Email</label><input type="email" name="email" placeholder="you@example.com" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></div>
     </div>
     <div style="margin-top:12px"><label>Message</label><textarea name="message" rows="6" placeholder="Tell us about your project" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></textarea></div>
-    <div style="margin-top:14px"><button class="btn" type="submit">Send</button></div>
+    <div class="actions" style="margin-top:14px"><button class="btn" type="submit">Send</button></div>
   </form>
 </div></section>
+
 
 <footer>
   <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
 </footer>
-<script>document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.menu').classList.remove('show');}));</script>
+<script>
+document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.menu').classList.remove('show');}));
+</script>
 </body>
 </html>

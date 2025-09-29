@@ -3,100 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Request a Construction Bid — Guaranteed Quality Construction</title>
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Contact — Guaranteed Quality Construction</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    form.card{--gap:14px}
+    form.card .grid{display:grid;gap:var(--gap)}
+    @media(min-width:900px){form.card .grid{grid-template-columns:1fr 1fr}}
+    form.card .grid + .grid{margin-top:var(--gap)}
+    form.card > div:not(.grid):not(.actions){margin-top:var(--gap)}
+    form.card label{display:block;font-weight:600;margin-bottom:6px}
+    form.card input, form.card select, form.card textarea{
+      width:100%;padding:12px 14px;border:1px solid #d1d5db;border-radius:12px;font:inherit;background:#fff;box-sizing:border-box;outline:none;
+    }
+    form.card input:focus,form.card select:focus,form.card textarea:focus{border-color:#94a3b8;box-shadow:0 0 0 3px rgba(148,163,184,.25)}
+    form.card textarea{resize:vertical;min-height:140px}
+    form.card .actions{text-align:center;margin-top:var(--gap)}
+    form.card .btn{min-width:180px}
+  </style>
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="commercial.html">Commercial</a>
-        <a href="residential.html">Residential</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a class="active" href="contact.html">Contact</a>
-      </div>
-    </div>
-  </nav>
-
   <header class="hero">
     <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
-    <div class="hero-content">
-      <span class="kicker">Guaranteed Quality Construction</span>
-      <h1>Contact Our Estimating Team</h1>
-      <p>Send drawings and scope details. We’ll review requirements, ask clarifying questions, and return a clear proposal with schedule assumptions.</p>
-      <div class="actions">
-        <a href="mailto:tducatt@guaranteedquality.net" class="cta">Email Estimating</a>
-        <a href="#contact-form" class="cta">Use the Form</a>
-      </div>
-    </div>
+    <div class="hero-content"><h1>Contact Our Team</h1><p>Send details of your project and we’ll respond quickly.</p></div>
   </header>
-
   <section class="section">
     <div class="container">
-      <form id="contact-form" class="card" method="post" action="https://formsubmit.co/tducatt@guaranteedquality.net" enctype="multipart/form-data">
+      <form class="card" method="post" action="https://formsubmit.co/tducatt@guaranteedquality.net">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://guaranteedqualityconstruction.net/thank-you.html">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="GQC — New Contact Form Submission">
-        <input type="hidden" name="_cc" value="tducatt@guaranteedquality.net">
+        <input type="hidden" name="_subject" value="GQC — New Contact Submission">
         <input type="text" name="_honey" style="display:none">
-
-        <div class="grid">
-          <div>
-            <label>Full Name *</label>
-            <input type="text" name="name" required placeholder="Your name" />
-          </div>
-          <div>
-            <label>Email *</label>
-            <input type="email" name="email" required placeholder="you@example.com" />
-          </div>
-        </div>
-        <div class="grid" style="margin-top:12px">
-          <div>
-            <label>Phone</label>
-            <input type="tel" name="phone" placeholder="(###) ###-####" />
-          </div>
-          <div>
-            <label>Project Type *</label>
-            <select name="type" required>
-              <option value="" disabled selected>Select one</option>
-              <option>Commercial Wood Framing</option>
-              <option>Custom Residential</option>
-              <option>Cross‑Laminated Timber (CLT)</option>
-            </select>
-          </div>
-        </div>
-        <div style="margin-top:12px">
-          <label>Project Location</label>
-          <input type="text" name="location" placeholder="City, State" />
-        </div>
-        <div style="margin-top:12px">
-          <label>Message *</label>
-          <textarea name="message" rows="6" required placeholder="Tell us about your project"></textarea>
-        </div>
-        <div class="actions" style="margin-top:14px">
-          <button class="btn" type="submit">Send</button>
-        </div>
+        <div class="grid"><div><label>Name *</label><input type="text" name="name" required></div><div><label>Email *</label><input type="email" name="email" required></div></div>
+        <div class="grid"><div><label>Phone</label><input type="tel" name="phone"></div><div><label>Project Type *</label><select name="type" required><option value="">Select one</option><option>Commercial</option><option>Residential</option><option>CLT</option></select></div></div>
+        <div><label>Message *</label><textarea name="message" required></textarea></div>
+        <div class="actions"><button class="btn" type="submit">Send</button></div>
       </form>
     </div>
   </section>
-
-  <footer>
-    <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
-  </footer>
-
-  <script>
-    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
-      document.querySelector('.menu').classList.remove('show');
-    }));
-  </script>
 </body>
 </html>

@@ -10,6 +10,28 @@
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preload" as="image" href="images/27dc5459-2d19-42bd-9d74-edb27b70dc38.jpg"/>
+  <style>
+    form.card{--gap:14px}
+    form.card .grid{display:grid;gap:var(--gap)}
+    @media(min-width:900px){form.card .grid{grid-template-columns:1fr 1fr}}
+    form.card .grid + .grid{margin-top:var(--gap)}
+    form.card > div:not(.grid):not(.actions){margin-top:var(--gap)}
+    form.card label{display:block;font-weight:600;margin-bottom:6px}
+    form.card input[type=text],
+    form.card input[type=email],
+    form.card input[type=tel],
+    form.card select,
+    form.card textarea{
+      width:100%; padding:12px 14px; border:1px solid #d1d5db;
+      border-radius:12px; font:inherit; background:#fff; box-sizing:border-box; outline:none;
+    }
+    form.card input:focus,
+    form.card select:focus,
+    form.card textarea:focus{border-color:#94a3b8; box-shadow:0 0 0 3px rgba(148,163,184,.25)}
+    form.card textarea{resize:vertical;min-height:140px}
+    form.card .actions{margin-top:var(--gap);text-align:center}
+    form.card .btn{min-width:180px}
+  </style>
 </head>
 <body>
   <nav class="nav">
@@ -29,7 +51,7 @@
     </div>
   </nav>
 
-  <header class="hero" aria-label="Hero">
+  <header class="hero">
     <div class="bg" style="background-image:url('images/27dc5459-2d19-42bd-9d74-edb27b70dc38.jpg')"></div>
     <div class="hero-content">
       <span class="kicker">Guaranteed Quality Construction</span>
@@ -43,37 +65,10 @@
     </div>
   </header>
 
-  <section class="section">
-    <h2>Our Expertise</h2>
-    <p class="lead">Our specialties include commercial wood framing for mid-rise multifamily and mixed-use structures, delivering projects on schedule and to spec. We also excel in high-end custom residential construction and cross-laminated timber (CLT) builds for modern, durable living spaces.</p>
-    <div class="grid cols-3">
-      <img loading="lazy" decoding="async" src="images/c119fbb6-151c-4b19-8c22-82d33b347239.jpg" alt="Commercial wood framing site exterior in Washington">
-      <img loading="lazy" decoding="async" src="images/4b93cb22-c419-4a51-ac3c-7fbe1019b46b.jpg" alt="Interior corridor rough-in of multifamily framing project">
-      <img loading="lazy" decoding="async" src="images/4855e20e-244f-4394-8bd9-d9fcb15b2f65.jpg" alt="Crane view of commercial wood framing project">
-      <img loading="lazy" decoding="async" src="images/f334cd4d-dccb-4eaf-b8d1-9375b5b78c96.jpg" alt="Detailed rafter assembly close-up">
-      <img loading="lazy" decoding="async" src="images/6b540b48-e66d-4364-a08e-7ed229c9b4ca.jpg" alt="Aerial deck view of commercial framing layout">
-      <img loading="lazy" decoding="async" src="images/310ca1b7-bf9c-49ff-9ee9-3c587d65b9ec.jpg" alt="Finished corridor framing with lighting installation">
-    </div>
-  </section>
-
-  <section class="section light" id="clt-featured">
-    <div class="container">
-      <h2>Featured CLT Residential Projects</h2>
-      <p class="lead">Two architect-led cross‑laminated timber homes showcasing precision framing and clean finishes.</p>
-      <div class="grid cols-4">
-        <img loading="lazy" decoding="async" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg" alt="Haus Gables white CLT house driveway entry">
-        <img loading="lazy" decoding="async" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-13.jpg" alt="Haus Gables terrace and balcony">
-        <img loading="lazy" decoding="async" src="images/clt-house-2-01.jpg" alt="Second CLT home exterior overview">
-        <img loading="lazy" decoding="async" src="images/clt-house-2-04.jpg" alt="Second CLT home roof assembly detail">
-      </div>
-    </div>
-  </section>
-
-  <!-- Request a Quote Form (FormSubmit) -->
   <section class="section light" id="quote">
     <div class="container">
       <h2>Request a Quote</h2>
-      <p class="lead">Tell us about your commercial framing or residential project. We’ll review drawings, confirm scope and return a clear proposal and schedule assumptions.</p>
+      <p class="lead">Tell us about your project. We’ll review drawings, confirm scope and return a clear proposal and schedule assumptions.</p>
       <form class="card" method="post" action="https://formsubmit.co/tducatt@guaranteedquality.net" enctype="multipart/form-data">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://guaranteedqualityconstruction.net/thank-you.html">
@@ -81,22 +76,12 @@
         <input type="hidden" name="_subject" value="GQC — New Quote Request">
         <input type="text" name="_honey" style="display:none">
         <div class="grid">
-          <div>
-            <label>Full Name *</label>
-            <input type="text" name="name" required placeholder="Your name" />
-          </div>
-          <div>
-            <label>Email *</label>
-            <input type="email" name="email" required placeholder="you@example.com" />
-          </div>
+          <div><label>Full Name *</label><input type="text" name="name" required placeholder="Your name" /></div>
+          <div><label>Email *</label><input type="email" name="email" required placeholder="you@example.com" /></div>
         </div>
         <div class="grid">
-          <div>
-            <label>Phone</label>
-            <input type="tel" name="phone" placeholder="(###) ###-####" />
-          </div>
-          <div>
-            <label>Project Type *</label>
+          <div><label>Phone</label><input type="tel" name="phone" placeholder="(###) ###-####" /></div>
+          <div><label>Project Type *</label>
             <select name="type" required>
               <option value="" disabled selected>Select one</option>
               <option>Commercial Wood Framing</option>
@@ -105,29 +90,13 @@
             </select>
           </div>
         </div>
-        <div>
-          <label>Project Location</label>
-          <input type="text" name="location" placeholder="City, State" />
-        </div>
-        <div>
-          <label>Message *</label>
-          <textarea name="message" rows="6" required placeholder="Scope, timeline, and any files you can share"></textarea>
-        </div>
-        <div class="actions">
-          <button class="btn" type="submit">Send Request</button>
-        </div>
+        <div><label>Project Location</label><input type="text" name="location" placeholder="City, State" /></div>
+        <div><label>Message *</label><textarea name="message" rows="6" required placeholder="Scope, timeline, and details"></textarea></div>
+        <div class="actions"><button class="btn" type="submit">Send Request</button></div>
       </form>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Guaranteed Quality Construction Inc. | Building with quality and precision | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
-  </footer>
-
-  <script>
-    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
-      document.querySelector('.menu').classList.remove('show');
-    }));
-  </script>
+  <footer><p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p></footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Request a Construction Bid — GQC</title>
+  <title>Request a Construction Bid — Guaranteed Quality Construction</title>
   <meta name="robots" content="index, follow" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
@@ -16,38 +16,83 @@
         <span></span><span></span><span></span>
       </button>
       <div class="menu">
-        <a class="" href="index.html">Home</a>
-        <a class="" href="commercial.html">Commercial</a>
-        <a class="" href="residential.html">Residential</a>
-        <a class="" href="projects.html">Projects</a>
-        <a class="" href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
         <a class="active" href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
-<header class="hero">
-  <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
-  <div class="hero-content">
-    <span class="kicker">Guaranteed Quality Construction</span>
-    <h1>Contact Our Estimating Team</h1>
-    <p>Send drawings and scope details. We’ll review requirements, ask clarifying questions, and return a clear proposal with schedule assumptions.</p>
-    <div class="actions"><a href="mailto:tducatt@guaranteedquality.net" class="cta">Email Estimating</a> <a href="#contact-form" class="cta">Use the Form</a></div>
-  </div>
-</header>
-<section class="section"><div class="container">
-  <form id="contact-form" class="card" method="post" action="#" onsubmit="alert('Thanks — we’ll be in touch shortly.'); return false;">
-    <div class="grid">
-      <div><label>Full Name</label><input type="text" name="name" placeholder="Your name" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></div>
-      <div><label>Email</label><input type="email" name="email" placeholder="you@example.com" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></div>
+
+  <header class="hero">
+    <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
+    <div class="hero-content">
+      <span class="kicker">Guaranteed Quality Construction</span>
+      <h1>Contact Our Estimating Team</h1>
+      <p>Send drawings and scope details. We’ll review requirements, ask clarifying questions, and return a clear proposal with schedule assumptions.</p>
+      <div class="actions">
+        <a href="mailto:tducatt@guaranteedquality.net" class="cta">Email Estimating</a>
+        <a href="#contact-form" class="cta">Use the Form</a>
+      </div>
     </div>
-    <div style="margin-top:12px"><label>Message</label><textarea name="message" rows="6" placeholder="Tell us about your project" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"></textarea></div>
-    <div class="actions" style="margin-top:14px"><button class="btn" type="submit">Send</button></div>
-  </form>
-</div></section>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <form id="contact-form" class="card" method="post" action="https://formsubmit.co/tducatt@guaranteedquality.net" enctype="multipart/form-data">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://guaranteedqualityconstruction.net/thank-you.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="GQC — New Contact Form Submission">
+        <input type="hidden" name="_cc" value="tducatt@guaranteedquality.net">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="grid">
+          <div>
+            <label>Full Name *</label>
+            <input type="text" name="name" required placeholder="Your name" />
+          </div>
+          <div>
+            <label>Email *</label>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <div>
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="(###) ###-####" />
+          </div>
+          <div>
+            <label>Project Type *</label>
+            <select name="type" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Commercial Wood Framing</option>
+              <option>Custom Residential</option>
+              <option>Cross‑Laminated Timber (CLT)</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label>Project Location</label>
+          <input type="text" name="location" placeholder="City, State" />
+        </div>
+        <div style="margin-top:12px">
+          <label>Message *</label>
+          <textarea name="message" rows="6" required placeholder="Tell us about your project"></textarea>
+        </div>
+        <div class="actions" style="margin-top:14px">
+          <button class="btn" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
   </footer>
+
   <script>
     document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
       document.querySelector('.menu').classList.remove('show');

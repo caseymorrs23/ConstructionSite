@@ -3,43 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Guaranteed Quality Construction</title>
+  <title>Contact | Guaranteed Quality Construction</title>
+  <meta name="description" content="Contact Guaranteed Quality Construction for bids, scheduling, and project questions. Commercial wood framing, custom residential, CLT, and finish work." />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    form.card{--gap:14px}
-    form.card .grid{display:grid;gap:var(--gap)}
-    @media(min-width:900px){form.card .grid{grid-template-columns:1fr 1fr}}
-    form.card .grid + .grid{margin-top:var(--gap)}
-    form.card > div:not(.grid):not(.actions){margin-top:var(--gap)}
-    form.card label{display:block;font-weight:600;margin-bottom:6px}
-    form.card input, form.card select, form.card textarea{
-      width:100%;padding:12px 14px;border:1px solid #d1d5db;border-radius:12px;font:inherit;background:#fff;box-sizing:border-box;outline:none;
-    }
-    form.card input:focus,form.card select:focus,form.card textarea:focus{border-color:#94a3b8;box-shadow:0 0 0 3px rgba(148,163,184,.25)}
-    form.card textarea{resize:vertical;min-height:140px}
-    form.card .actions{text-align:center;margin-top:var(--gap)}
-    form.card .btn{min-width:180px}
+    .card{background:#fff; padding:1.25rem; border:1px solid #e6e6e6; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; align-items:end}
+    label{display:block; font-weight:600; margin:6px 0}
+    input, select, textarea{width:100%; padding:12px; border:1px solid #d6d6d6; border-radius:10px; font:inherit}
+    textarea{min-height:160px}
+    .actions{display:flex; justify-content:flex-end; margin-top:12px}
+    .btn{background:#f6c10a; border:none; padding:.8rem 1.25rem; border-radius:999px; font-weight:700; cursor:pointer}
+    .btn:hover{filter:brightness(.95)}
   </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
-    <div class="hero-content"><h1>Contact Our Team</h1><p>Send details of your project and we’ll respond quickly.</p></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="projects.html">Projects</a>
+        <a href="finish.html">Finish Work</a>
+        <a href="index.html#recent-builds">Recent Work</a>
+        <a href="in-progress.html">In‑Progress Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" aria-label="Contact hero">
+    <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-13.jpg')"></div>
+    <div class="hero-content">
+      <span class="kicker">Get in Touch</span>
+      <h1>Request a Bid or Schedule a Walkthrough</h1>
+      <p>Send drawings, scope, and schedule. We’ll get you a fast, clear response.</p>
+    </div>
   </header>
+
   <section class="section">
     <div class="container">
-      <form class="card" method="post" action="https://formsubmit.co/tducatt@guaranteedquality.net">
+      <h2>Contact Form</h2>
+      <form id="contact-form" class="card" method="post" action="https://formsubmit.co/tducatt@guaranteedquality.net">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://guaranteedqualityconstruction.net/thank-you.html">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="GQC — New Contact Submission">
-        <input type="text" name="_honey" style="display:none">
-        <div class="grid"><div><label>Name *</label><input type="text" name="name" required></div><div><label>Email *</label><input type="email" name="email" required></div></div>
-        <div class="grid"><div><label>Phone</label><input type="tel" name="phone"></div><div><label>Project Type *</label><select name="type" required><option value="">Select one</option><option>Commercial</option><option>Residential</option><option>CLT</option></select></div></div>
-        <div><label>Message *</label><textarea name="message" required></textarea></div>
+        <input type="hidden" name="_subject" value="GQC — Contact Page Submission">
+        <div class="grid">
+          <div><label for="name">Name *</label><input id="name" name="name" type="text" required placeholder="Your name"></div>
+          <div><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+        </div>
+        <div class="grid">
+          <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(###) ###-####"></div>
+          <div><label for="type">Project Type *</label>
+            <select id="type" name="type" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Commercial Wood Framing</option>
+              <option>Custom Residential</option>
+              <option>Cross‑Laminated Timber (CLT)</option>
+              <option>Finish Work (doors, trim, cabinets)</option>
+            </select>
+          </div>
+        </div>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="Tell us about the project, location, schedule, and any plans to attach."></textarea>
         <div class="actions"><button class="btn" type="submit">Send</button></div>
       </form>
     </div>
   </section>
+
+  <footer><p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p></footer>
 </body>
 </html>

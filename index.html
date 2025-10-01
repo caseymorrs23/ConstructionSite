@@ -22,11 +22,12 @@
   </style>
 </head>
 <body>
-
   <nav class="nav">
     <div class="nav-inner">
       <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
       <div class="menu">
         <a href="index.html">Home</a>
         <a href="commercial.html">Commercial</a>
@@ -34,7 +35,7 @@
         <a href="projects.html">Projects</a>
         <a href="finish.html">Finish Work</a>
         <a href="index.html#recent-builds">Recent Work</a>
-        <a href="in-progress.html">In‑Progress Work</a>
+        <a href="inprogress.html">In‑Progress Work</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
@@ -75,12 +76,30 @@
       <h2>Recent Builds & In‑Progress Work</h2>
       <p class="lead">A quick look at current jobs in the field.</p>
       <div class="grid cols-3 captions">
-        <figure><img src="images/residentialexterior.jpg" alt="Custom residential exterior during framing"><figcaption>Custom home exterior in framing — turret & deck structure.</figcaption></figure>
-        <figure><img src="images/exteriorresidential.jpg" alt="Residential build with sheathing and window openings"><figcaption>Residential shell with sheathing and window layout.</figcaption></figure>
-        <figure><img src="images/exteriorcommercial.jpg" alt="Commercial or multifamily exterior wrap and staging"><figcaption>Multifamily exterior wrap & staging in progress.</figcaption></figure>
-        <figure><img src="images/commercialgreenmulti1.jpg" alt="Commercial green multifamily project exterior"><figcaption>New multifamily green exterior build in progress.</figcaption></figure>
-        <figure><img src="images/commercialgreenmulti2.jpg" alt="Commercial green multifamily with scaffolding"><figcaption>Ongoing framing & scaffolding setup on multifamily project.</figcaption></figure>
-        <figure><img src="images/commercialgreenmulti3.jpg" alt="Multifamily framing with green sheathing"><figcaption>Green sheathing exterior framing nearing completion.</figcaption></figure>
+        <figure>
+          <img src="images/residentialexterior.jpg" alt="Custom residential exterior during framing">
+          <figcaption>Custom home exterior in framing — turret & deck structure.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/exteriorresidential.jpg" alt="Residential build with sheathing and window openings">
+          <figcaption>Residential shell with sheathing and window layout.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/exteriorcommercial.jpg" alt="Commercial or multifamily exterior wrap and staging">
+          <figcaption>Multifamily exterior wrap & staging in progress.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/commercialgreenmulti1.jpg" alt="Commercial green multifamily project exterior">
+          <figcaption>New multifamily green exterior build in progress.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/commercialgreenmulti2.jpg" alt="Commercial green multifamily with scaffolding">
+          <figcaption>Ongoing framing & scaffolding setup on multifamily project.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/commercialgreenmulti3.jpg" alt="Multifamily framing with green sheathing">
+          <figcaption>Green sheathing exterior framing nearing completion.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -114,12 +133,22 @@
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="GQC — Home Page Bid Request">
         <div class="grid">
-          <div><label for="qname">Name *</label><input id="qname" type="text" name="name" required placeholder="Your name" /></div>
-          <div><label for="qemail">Email *</label><input id="qemail" type="email" name="email" required placeholder="you@example.com" /></div>
+          <div>
+            <label for="qname">Name *</label>
+            <input id="qname" type="text" name="name" required placeholder="Your name" />
+          </div>
+          <div>
+            <label for="qemail">Email *</label>
+            <input id="qemail" type="email" name="email" required placeholder="you@example.com" />
+          </div>
         </div>
         <div class="grid">
-          <div><label for="qphone">Phone</label><input id="qphone" type="tel" name="phone" placeholder="(###) ###-####" /></div>
-          <div><label for="qtype">Project Type *</label>
+          <div>
+            <label for="qphone">Phone</label>
+            <input id="qphone" type="tel" name="phone" placeholder="(###) ###-####" />
+          </div>
+          <div>
+            <label for="qtype">Project Type *</label>
             <select id="qtype" name="type" required>
               <option value="" disabled selected>Select one</option>
               <option>Commercial Wood Framing</option>
@@ -129,13 +158,25 @@
             </select>
           </div>
         </div>
-        <div><label for="qmessage">Message *</label><textarea id="qmessage" name="message" rows="5" required placeholder="Tell us about the project"></textarea></div>
-        <div class="actions"><button class="btn" type="submit">Send</button></div>
+        <div>
+          <label for="qmessage">Message *</label>
+          <textarea id="qmessage" name="message" rows="5" required placeholder="Tell us about the project"></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn" type="submit">Send</button>
+        </div>
       </form>
     </div>
   </section>
 
-  <footer><p>© 2025 Guaranteed Quality Construction Inc. | Building with quality and precision | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p></footer>
-  <script>document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.menu').classList.remove('show');}));</script>
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | Building with quality and precision | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
 </body>
 </html>

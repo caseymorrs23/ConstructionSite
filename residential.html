@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Custom & CLT Residential | Guaranteed Quality Construction</title>
+  <title>Custom Residential & CLT — GQC</title>
+  <meta name="robots" content="index, follow" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -11,28 +12,57 @@
   <nav class="nav">
     <div class="nav-inner">
       <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="commercial.html">Commercial</a>
-        <a href="residential.html">Residential</a>
-        <a href="projects.html">Projects</a>
-        <a href="finish.html">Finish Work</a>
-        <a href="index.html#recent-builds">Recent Work</a>
-        <a href="inprogress.html">In‑Progress Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a class="" href="index.html">Home</a>
+        <a class="" href="commercial.html">Commercial</a>
+        <a class="active" href="residential.html">Residential</a>
+        <a class="" href="projects.html">Projects</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
-  <header class="hero">
-    <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
-    <div class="hero-content">
-      <span class="kicker">Guaranteed Quality Construction</span>
-      <h1>Custom & CLT Residential</h1>
-    </div>
-  </header>
-  <section class="section"><div class="container"><p>Content coming soon.</p></div></section>
-  <footer><p>© 2025 Guaranteed Quality Construction Inc.</p></footer>
+<header class="hero">
+  <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg')"></div>
+  <div class="hero-content">
+    <span class="kicker">Guaranteed Quality Construction</span>
+    <h1>Custom Residential Builder & Cross‑Laminated Timber (CLT)</h1>
+    <p>High‑end, architect‑led homes and mass timber scopes. We coordinate budgeting, framing, and finish interfaces to deliver clean details and durable results.</p>
+    <div class="actions"><a href="projects.html#residential" class="cta">See Residential & CLT</a> <a href="contact.html" class="cta">Request a Bid</a></div>
+  </div>
+</header>
+<section class="section"><div class="container">
+  <h2>Finished — Haus Gables</h2>
+  <div class="grid cols-3">
+    <img decoding="async" loading="lazy" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-15.jpg" sizes="(min-width:1024px) 33vw, 100vw" alt="Driveway entry white facade">
+    <img decoding="async" loading="lazy" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-13.jpg" sizes="(min-width:1024px) 33vw, 100vw" alt="Terrace and balcony">
+    <img decoding="async" loading="lazy" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-18.jpg" sizes="(min-width:1024px) 33vw, 100vw" alt="Kitchen with terrazzo counters">
+    <img decoding="async" loading="lazy" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-7.jpg" sizes="(min-width:1024px) 33vw, 100vw" alt="Dining yellow floor">
+    <img decoding="async" loading="lazy" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-11.jpg" sizes="(min-width:1024px) 33vw, 100vw" alt="Bathroom with patterned tile">
+    <img decoding="async" loading="lazy" src="images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-4.jpg" sizes="(min-width:1024px) 33vw, 100vw" alt="Bedroom with natural light">
+  </div>
+</div>
+<section class="section" id="clt2"><div class="container">
+  <h2>Second CLT Residence — Selected Views</h2>
+  <div class="grid cols-4">
+    <img src="images/clt-house-2-01.jpg" alt="CLT residence exterior overview">
+    <img src="images/clt-house-2-04.jpg" alt="CLT roof assembly and geometry">
+    <img src="images/clt-house-2-05.jpg" alt="Mass timber connection detail">
+    <img src="images/clt-house-2-06.jpg" alt="CLT exterior elevation">
+  </div>
+</div></section>
+</section>
+
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
 </body>
 </html>

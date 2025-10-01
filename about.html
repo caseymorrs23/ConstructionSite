@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Guaranteed Quality Construction</title>
+  <title>About Guaranteed Quality Construction — GQC</title>
+  <meta name="robots" content="index, follow" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -11,28 +12,41 @@
   <nav class="nav">
     <div class="nav-inner">
       <a class="brand" href="index.html">GQC <small>Guaranteed Quality Construction Inc.</small></a>
-      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))"><span></span><span></span><span></span></button>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('.menu').classList.toggle('show');this.setAttribute('aria-expanded', document.querySelector('.menu').classList.contains('show'))">
+        <span></span><span></span><span></span>
+      </button>
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="commercial.html">Commercial</a>
-        <a href="residential.html">Residential</a>
-        <a href="projects.html">Projects</a>
-        <a href="finish.html">Finish Work</a>
-        <a href="index.html#recent-builds">Recent Work</a>
-        <a href="inprogress.html">In‑Progress Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a class="" href="index.html">Home</a>
+        <a class="" href="commercial.html">Commercial</a>
+        <a class="" href="residential.html">Residential</a>
+        <a class="" href="projects.html">Projects</a>
+        <a class="active" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
-  <header class="hero">
-    <div class="bg" style="background-image:url('images/27dc5459-2d19-42bd-9d74-edb27b70dc38.jpg')"></div>
-    <div class="hero-content">
-      <span class="kicker">Guaranteed Quality Construction</span>
-      <h1>About</h1>
-    </div>
-  </header>
-  <section class="section"><div class="container"><p>Content coming soon.</p></div></section>
-  <footer><p>© 2025 Guaranteed Quality Construction Inc.</p></footer>
+<header class="hero">
+  <div class="bg" style="background-image:url('images/Haus-Gables-Jennifer-Bonner-MALL-NAARO-13.jpg')"></div>
+  <div class="hero-content">
+    <span class="kicker">Guaranteed Quality Construction</span>
+    <h1>About Guaranteed Quality Construction</h1>
+    <p>Decades of experience delivering commercial wood framing, custom residential building, and cross‑laminated timber construction — with rigorous safety, clean sites, and reliable schedules.</p>
+    <div class="actions"><a href="projects.html" class="cta">See Our Work</a> <a href="contact.html" class="cta">Talk With Our Team</a></div>
+  </div>
+</header>
+<section class="section"><div class="container"><div class="grid cols-3">
+  <div class="card"><h3>Leadership</h3><p>Hands‑on project leadership keeps work coordinated, safe, and inspection‑ready.</p></div>
+  <div class="card"><h3>Communication</h3><p>Clear updates and responsive collaboration with owners, architects, and GCs.</p></div>
+  <div class="card"><h3>Quality</h3><p>Clean details, protected materials, and a zero‑punch mentality.</p></div>
+</div></div></section>
+
+  <footer>
+    <p>© 2025 Guaranteed Quality Construction Inc. | <a href="mailto:tducatt@guaranteedquality.net">tducatt@guaranteedquality.net</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>{
+      document.querySelector('.menu').classList.remove('show');
+    }));
+  </script>
 </body>
 </html>
